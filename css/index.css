@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.btn-primary {
+  --bs-btn-bg: #e4062b;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #e4062b;
+  --bs-btn-border-color: #e4062b;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #A81E35;
+  --bs-btn-hover-border-color: #A81E35;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #A81E35;
+  --bs-btn-active-border-color: #A81E35;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #e4062b;
+  --bs-btn-disabled-border-color: #e4062b;
+}
+
+.btn-outline-secondary {
+  --bs-btn-color: #3D3B40;
+  --bs-btn-border-color: #959199;
+  --bs-btn-hover-color: #3D3B40;
+  --bs-btn-hover-bg: #F6F5F7;
+  --bs-btn-hover-border-color: #3D3B40;
+  --bs-btn-focus-shadow-rgb: 108, 117, 125;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #E5E3E8;
+  --bs-btn-active-border-color: #3D3B40;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #6c757d;
+  --bs-gradient: none;
+}
+
+.btn-light {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #ffffff;
+  --bs-btn-border-color: #f8f9fa00;
+  --bs-btn-hover-color: #3D3B40;
+  --bs-btn-hover-bg: #F6F5F7;
+  --bs-btn-hover-border-color: #c6c7c800;
+  --bs-btn-focus-shadow-rgb: 211, 212, 213;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #E5E3E8;
+  --bs-btn-active-border-color: #c6c7c800;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #f8f9fa;
+  --bs-btn-disabled-border-color: #f8f9fa;
+}
+
+nav .navbar-brand img {
+  width: 200px;
+}
+nav .nav-item a {
+  font-weight: 600;
+}
+
+.search .recent-search, .search .tab-content .search-section .search-box #buy-search .results {
+  position: absolute;
+  background: white;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+}
+
+.search {
+  min-height: 240px;
+  height: 300px;
+  background-image: url("https://argonaut.au.reastatic.net/resi-property/prod/homepage-web/web_sml-469886432859a87045da.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.search .search-wrapper {
+  margin: auto;
+  max-width: 46.5rem;
+  width: 100%;
+  min-height: 8rem;
+  border-radius: 5rem;
+}
+.search .nav-tabs {
+  overflow: hidden;
+  align-items: center;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.search .nav-tabs .nav-item {
+  width: 100%;
+  flex: 1;
+}
+.search .nav-tabs .nav-item .nav-link {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #726E75;
+  text-decoration: none;
+  background: 0 0;
+  border: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-bottom 0.1s ease-in-out;
+}
+.search .nav-tabs .nav-item .nav-link:hover {
+  text-decoration: underline;
+  background-color: #F6F5F7;
+  color: #3D3B40;
+}
+.search .nav-tabs .nav-item .nav-link:active {
+  background-color: #E5E3E8;
+}
+.search .nav-tabs .nav-item .nav-link:focus {
+  border-bottom: 3px solid #e4002b;
+}
+.search .tab-content .search-section {
+  max-height: 11.25rem;
+  overflow: hidden auto;
+}
+.search .tab-content .search-section .search-box {
+  display: flex;
+  align-items: start;
+  width: 100%;
+}
+.search .tab-content .search-section .search-box #buy-search {
+  width: 100%;
+}
+.search .tab-content .search-section .search-box #buy-search .results:before {
+  content: "Suggested locations";
+}
+.search .tab-content .search-section .search-box #buy-search .search-container {
+  flex-wrap: wrap;
+  border: none;
+  max-width: 440px;
+}
+.search .tab-content .search-section .search-box #buy-search .search-container .selected-items {
+  flex-wrap: wrap;
+}
+.search .tab-content .search-section .search-box:hover {
+  background: #F6F5F7;
+  padding: 10px 1px;
+  border-radius: 10px;
+}
+.search .tab-content .search-section .search-box:hover input {
+  background: #F6F5F7;
+}
+.search .tab-content .search-section .search-box input:focus {
+  background: none;
+}
+.search .tab-content .search-section .search-box:focus-within {
+  background: none;
+}
+.search .tab-content .search-section .search-box:hover input:focus {
+  background: none;
+}
+.search .tab-content .search-section input:focus .selected-item {
+  flex-wrap: wrap;
+}
+.py-11 {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.px-23 {
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+.px-24 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/*# sourceMappingURL=index.css.map */

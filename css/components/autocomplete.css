@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.btn-primary {
+  --bs-btn-bg: #e4062b;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #e4062b;
+  --bs-btn-border-color: #e4062b;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #A81E35;
+  --bs-btn-hover-border-color: #A81E35;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #A81E35;
+  --bs-btn-active-border-color: #A81E35;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #e4062b;
+  --bs-btn-disabled-border-color: #e4062b;
+}
+
+.btn-outline-secondary {
+  --bs-btn-color: #3D3B40;
+  --bs-btn-border-color: #959199;
+  --bs-btn-hover-color: #3D3B40;
+  --bs-btn-hover-bg: #F6F5F7;
+  --bs-btn-hover-border-color: #3D3B40;
+  --bs-btn-focus-shadow-rgb: 108, 117, 125;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #E5E3E8;
+  --bs-btn-active-border-color: #3D3B40;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #6c757d;
+  --bs-gradient: none;
+}
+
+.btn-light {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #ffffff;
+  --bs-btn-border-color: #f8f9fa00;
+  --bs-btn-hover-color: #3D3B40;
+  --bs-btn-hover-bg: #F6F5F7;
+  --bs-btn-hover-border-color: #c6c7c800;
+  --bs-btn-focus-shadow-rgb: 211, 212, 213;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #E5E3E8;
+  --bs-btn-active-border-color: #c6c7c800;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #f8f9fa;
+  --bs-btn-disabled-border-color: #f8f9fa;
+}
+
+nav .navbar-brand img {
+  width: 200px;
+}
+nav .nav-item a {
+  font-weight: 600;
+}
+
+.auto-complete .search-container {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+  border: 1px solid black;
+}
+.auto-complete .search-container .selected-items {
+  display: flex;
+  gap: 10px;
+}
+.auto-complete .search-container .selected-items .selected-item {
+  border-radius: 2rem;
+  background: #E5E3E8;
+  padding: 3px 10px;
+  display: flex;
+  gap: 5px;
+}
+.auto-complete .search-container .selected-items .selected-item .delete-item {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+}
+.auto-complete .search-container .selected-items .selected-item .delete-item:hover {
+  background: #cbc7d1;
+}
+.auto-complete .search-container input {
+  border: none;
+  outline: none;
+}
+
+/*# sourceMappingURL=autocomplete.css.map */

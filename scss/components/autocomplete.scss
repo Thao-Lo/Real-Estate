@@ -1,0 +1,44 @@
+@use '../global/global';
+@use 'sass:color';
+
+.auto-complete {
+    .search-container {
+        display: flex;
+        gap: 5px;
+        align-items: baseline;
+        border: 1px solid black;
+
+        .selected-items {
+            display: flex;
+            gap: 10px;
+
+            .selected-item {
+                border-radius: 2rem;
+                background: #E5E3E8;
+                padding: 3px 10px;
+                display: flex;
+                gap: 5px;
+
+                .delete-item {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                    background: transparent;
+
+                    &:hover {
+                        background: darken(#E5E3E8, 10%);
+                    }
+                }
+            }
+        }
+
+        input {
+            border: none;
+            outline: none;
+        }
+    }
+}

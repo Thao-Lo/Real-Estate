@@ -1,0 +1,149 @@
+@use '../global/variable' as *;
+
+%result-box {
+    position: absolute;
+    background: white;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+}
+
+.search {
+    min-height: 240px;
+    height: 300px;
+    background-image: url('https://argonaut.au.reastatic.net/resi-property/prod/homepage-web/web_sml-469886432859a87045da.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .search-wrapper {
+        margin: auto;
+        max-width: 46.5rem;
+        width: 100%;
+        min-height: 8rem;
+        border-radius: 5rem;
+
+    }
+
+    .nav-tabs {
+        overflow: hidden;
+        align-items: center;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+
+        .nav-item {
+            width: 100%;
+            flex: 1;
+
+            .nav-link {
+                display: block;
+                width: 100%;
+                padding: 0.5rem 0.75rem;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                font-weight: 500;
+                color: #726E75;
+                text-decoration: none;
+                background: 0 0;
+                // border-bottom: 1px solid #E5E3E8;
+                border: none;
+                transition: color .15s ease-in-out, background-color .15s ease-in-out, border-bottom .1s ease-in-out;
+
+            }
+
+            .nav-link:hover {
+                text-decoration: underline;
+                background-color: $bg-hover-primary;
+                ;
+                color: #3D3B40;
+            }
+
+            .nav-link:active {
+                background-color: #E5E3E8;
+
+            }
+
+            .nav-link:focus {
+                border-bottom: 3px solid #e4002b;
+            }
+        }
+    }
+
+    .tab-content {
+        .search-section {
+            max-height: 11.25rem;
+            overflow: hidden auto;
+
+            .search-box {
+                display: flex;
+                align-items: start;
+                width: 100%;
+
+
+
+                #buy-search {
+                    width: 100%;
+
+                    .results {
+                        @extend %result-box;
+
+                        &:before {
+                            content: "Suggested locations"
+                        }
+
+                    }
+
+                    .search-container {
+                        flex-wrap: wrap;
+                        border: none;
+                        max-width: 440px;
+
+                        .selected-items {
+                            flex-wrap: wrap;
+                          
+                        }
+                    }
+
+                }
+            }
+
+            //search box change bg color when hover but not include input
+            .search-box:hover {
+                background: $bg-hover-primary;
+                padding: 10px 1px;
+                border-radius: 10px;
+            }
+
+            //include input bg change when searchj box hover
+            .search-box:hover input {
+                background: $bg-hover-primary;
+            }
+
+            // when input focus, input background is none
+            .search-box input:focus {
+                background: none;
+
+            }
+
+            //This rule applies to the .search-box when any child element (like an input) within it is focused.
+            .search-box:focus-within {
+                background: none;
+            }
+
+            //If the .search-box is hovered and the input element is focused at the same time, the rule .search-box:hover input:focus ensures that the input element's background remains none.
+            .search-box:hover input:focus {
+                background: none;
+            }
+            input:focus .selected-item{               
+                    flex-wrap: wrap;
+                    
+                
+            }
+        }
+    }
+
+    .recent-search {
+        @extend %result-box;
+    }
+}
