@@ -140,7 +140,7 @@
                             input 3
                         </div>
                     </div>
-                    <div class="recent-search d-none">
+                    <div class="recent-search">
                         <h5>
                             Suggested location
                         </h5>
@@ -532,34 +532,98 @@
                 data, //fetch from API
                 multiple: true,
             });
-             const searchBox = $('.search-box');
-             const input = searchBox.find('input');
+            let userSearchValue = [];    
+            
+            const searchBox = $('.search-box');
+            const input = searchBox.find('input');
             const result = searchBox.find('.results');
+            const selectedItems = searchBox.find('.selected-items');   
+            const recentSearch = $('.search-wrapper .recent-search');    
+                                  
             let userInput = '';
 
             input.on('keyup', function (e) {
-            result.find('ul').append('<li>Test</li>')
-            userInput = e.target.value;
-            console.log(userInput);          
+            userInput = e.target.value;    
+            result.find('ul').append(`<div class="search-for">Search for: ${userInput}</div>`)            
+            let searchFor = searchBox.find('.search-for'); 
             
+            searchFor.on('click', function(){
+                //if userInput is already in the UserInputValue array, it will not append or push into array
+            if(!userSearchValue.includes(userInput)){
+            selectedItems.append(`
+             <div class="selected-item" data-id=${userInput}>
+                    ${userInput}
+                    <button class="delete-item">
+                        <svg class="CK__Icon--medium Pill__FatCross-sc-eiw3o3-0 hQjktV" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.854 2.854a.5.5 0 0 0-.708-.708L8 7.293 2.854 2.146a.5.5 0 0 0-.708.708L7.293 8l-5.147 5.146a.5.5 0 0 0 .708.708L8 8.707l5.146 5.147a.5.5 0 0 0 .708-.708L8.707 8l5.147-5.146Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </button>
+                </div> 
+            `)   
+                userSearchValue.push(userInput);   
+                console.log(userSearchValue);   
+            }           
+            deleteSearchFor()
+            input.val('');
+            result.hide();
+            })           
         }) 
 
+        // delete user Input search for selection
+        function deleteSearchFor(){         
+            const deletedItem = $('.delete-item');  
+            deletedItem.on('click', function(e){
+            event.stopPropagation();
+            const selectedItem = $(this).parent();
+            const dataId = selectedItem.data('id');
+            if(userSearchValue.includes(dataId)){
+                selectedItem.remove();
+                const index = userSearchValue.indexOf(dataId);
+                userSearchValue.splice(index, 1);
+                console.log("after delete" + userSearchValue);
+            }           
+    })  
+    } 
+    $(' .results li').on('click', function (event) {
+        event.stopPropagation();
+            userSearchValue.push($(this).data('id'));           
+        
+         
+        })
+    
+      
     //handle when user click outside the input    
      // Click handler to focus on input when click everywhere on search box
      searchBox.on('click', function(event) {
         event.stopPropagation();
         input.focus();
-    });       
+       if(input.is(':focus') && input.val().trim() === ''){
+        recentSearch.show();
+       }else{
+        recentSearch.hide();
+       }       
+    });   
+
+    input.on('input', function() {
+    if (input.is(':focus') && input.val().trim() === '') {
+        recentSearch.show();
+    } else {
+        recentSearch.hide();
+    }
+});   
     // Blur handler to hide results and clear input value
     $(document).on('click', function(event) {
       //checks if there are no elements matching event.target that are descendants of .search-box.
         if (!searchBox.is(event.target) && searchBox.has(event.target).length === 0) {
-            result.hide(); // Hide .results element
+            result.hide();
+            recentSearch.hide(); // Hide .results element
             input.val(''); // Clear input value
         }
-    }); 
-    
-    })          
+    });     
+    })   
 });
 // {
 //     "result": [

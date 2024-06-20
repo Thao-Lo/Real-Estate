@@ -144,6 +144,7 @@
     }
 
     .recent-search {
+        display: none;
         @extend %result-box;
     }
 }

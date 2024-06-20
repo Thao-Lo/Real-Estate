@@ -164,6 +164,10 @@ nav .nav-item a {
 .search .tab-content .search-section input:focus .selected-item {
   flex-wrap: wrap;
 }
+.search .recent-search {
+  display: none;
+}
+
 .py-11 {
   padding-top: 11px;
   padding-bottom: 11px;
