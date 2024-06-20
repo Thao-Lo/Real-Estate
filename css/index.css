@@ -118,6 +118,9 @@ nav .nav-item a {
 .search .nav-tabs .nav-item .nav-link:active {
   background-color: #E5E3E8;
 }
+.search .nav-tabs .nav-item .active {
+  border-bottom: 3px solid #e4002b;
+}
 .search .nav-tabs .nav-item .nav-link:focus {
   border-bottom: 3px solid #e4002b;
 }
@@ -143,6 +146,9 @@ nav .nav-item a {
 }
 .search .tab-content .search-section .search-box #buy-search .search-container .selected-items {
   flex-wrap: wrap;
+}
+.search .tab-content .search-section .search-box input {
+  flex: 1;
 }
 .search .tab-content .search-section .search-box:hover {
   background: #F6F5F7;

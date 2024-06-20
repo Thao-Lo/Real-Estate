@@ -60,8 +60,11 @@
             }
 
             .nav-link:active {
-                background-color: #E5E3E8;
+                background-color: #E5E3E8;               
 
+            }
+            .active{
+                border-bottom: 3px solid #e4002b;
             }
 
             .nav-link:focus {
@@ -106,6 +109,8 @@
                     }
 
                 }
+            }  .search-box input {
+               flex: 1;
             }
 
             //search box change bg color when hover but not include input
