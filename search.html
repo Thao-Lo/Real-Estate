@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" $y="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- /
+        On load => call the search API to get the list properties
+        => research how to pagination on JSON-SERVER
+        => call first page with 10 items =>
+        => generate 10 item to 10 mock HTML
+
+        Get the page number from URL
+        => paste that number to the data Url
+        => http://localhost:3000/search?_page={}
+        //eq(0): target the first .page-item element
+
+        More than 5 pages
+        1~3: pre 1,2,3,4...next (<= firstPage + 2)        
+        lastpage-2: pre 1...7,8,9 (9 is the last page) (>= lastPage - 2)
+        4~: pre 1...3,4,5...next (else)
+    -->
+    <section class="mb-3">
+
+    </section>
+
+    <ul class="pagination">
+        <li class="page-item previous">
+            <a class="page-link active" href="">Previous</a>
+        </li>
+
+
+        <li class="page-item next">
+            <a class="page-link active" href="">Next</a>
+        </li>
+    </ul>
+
+
+    <script>
+        $(document).ready(function () {
+            // const serach = window.location.search
+            const { search } = window.location
+            const paramList = new URLSearchParams(search);
+            //it return the value as a string
+            let page = paramList.get("page");
+            if (!page) {
+                page = 1;
+            }
+            //change String into Int to do numrical function
+            page = parseInt(page);
+            console.log(window.location);
+            $.get(`http://localhost:3000/search?_page=${page}&_per_page=3`).then(respond => {
+                console.log("response", respond);
+                const { data, pages: totalPage, prev, next, first, last } = respond;
+                //const data = response.data;            
+                const items = data.map(({ firstName, type, ownerAvatar }) => {
+                    return `
+                  <div class="fist-name">First Name: ${firstName}</div>
+                 <div class="type">${type}</div>
+                <img class="avatar" src="${ownerAvatar}" alt="ownwe avatar" style=""width=200px/>
+                `;
+                })
+                //$('section').append(items.join(""));
+                //append in JQuery receive an array[], no need to use join
+                $('section').append(items);
+
+                const prevBtn = $('.previous');
+                const nextBtn = $('.next')
+
+                function generatePagination() {
+                    
+                    //handle pagination - render page number
+                    if (page <= first + 2) {
+                        for (let i = 1; i <= first + 3; i++) {
+                            $(`<li class="page-item"><a class="page-link" href="search.html?page=${i}">${i}</a></li>`)
+                                .insertBefore('.pagination .page-item:last');
+                        }
+                    } else if (page >= last - 2) {
+                        for (let i = last - 3; i <= last; i++) {
+                            $(`<li class="page-item"><a class="page-link" href="search.html?page=${i}">${i}</a></li>`)
+                                .insertBefore('.pagination .page-item:last');
+                        }
+                    }
+                    else {
+                        $(`<li class="page-item"><a class="page-link" href="search.html?page=${first}">${first}</a></li>
+                        <li>...</li>`)
+                            .insertBefore('.pagination .page-item:last');
+                        
+                        for (let i = page - 1; i <= (page + 1); i++) {
+                            console.log("page"+ page);
+                            $(`<li class="page-item"><a class="page-link" href="search.html?page=${i}">${i}</a></li>`)
+                                .insertBefore('.pagination .page-item:last');
+                        }
+
+                        $(`<li>...</li>
+                        <li class="page-item"><a class="page-link" href="search.html?page=${last}">${last}</a></li>`)
+                            .insertBefore('.pagination .page-item:last');
+                    }
+                  
+                    //pagination page number display logic
+                    if (page != 1) {
+                        prevBtn.removeClass('d-none')
+                    } else {
+                        prevBtn.addClass('d-none')
+                    }
+                    if (page != last) {
+                        nextBtn.removeClass('d-none')
+                    } else {
+                        nextBtn.addClass('d-none')
+                    }
+                }
+                
+                generatePagination(); 
+
+                //handle previous & next button of pagination
+                prevBtn.on('click', function () {
+                    $(".previous .page-link").attr("href", `search.html?page=${prev}`);
+                })
+                nextBtn.on('click', function () {
+                    $(".next .page-link").attr("href", `search.html?page=${next}`);
+                })
+            })
+        });
+    </script>
+</body>
+
+</html>

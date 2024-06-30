@@ -16,6 +16,13 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" $y="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/components/autocomplete.css">
     <link rel="stylesheet" href="/css/index.css">
 </head>
@@ -102,21 +109,21 @@
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <!-- Search container and button Filter + Search -->
                             <div class="search-section d-flex align-items-center gap-2 px-3 py-3" role="search">
-                              <div class="search-box">
-                                <div>
-                                    <svg class="CK__Icon--medium flex-1 align-self-start" viewBox="0 0 16 16" fill="none" width="2rem" height="1rem"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M7 1a6 6 0 1 0 3.874 10.582l3.272 3.272a.5.5 0 0 0 .708-.708l-3.272-3.272A6 6 0 0 0 7 1ZM2 7a5 5 0 1 1 10 0A5 5 0 0 1 2 7Z"
-                                        fill="currentColor"></path>
-                                </svg>
-                                </div>
-                                
-                                <!-- autocomplete -->
-                                <div id="buy-search">                                  
+                                <div class="search-box">
+                                    <div>
+                                        <svg class="CK__Icon--medium flex-1 align-self-start" viewBox="0 0 16 16"
+                                            fill="none" width="2rem" height="1rem" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M7 1a6 6 0 1 0 3.874 10.582l3.272 3.272a.5.5 0 0 0 .708-.708l-3.272-3.272A6 6 0 0 0 7 1ZM2 7a5 5 0 1 1 10 0A5 5 0 0 1 2 7Z"
+                                                fill="currentColor"></path>
+                                        </svg>
+                                    </div>
 
+                                    <!-- autocomplete -->
+                                    <div id="buy-search">
+
+                                    </div>
                                 </div>
-                            </div>
                                 <button
                                     class="btn btn-outline-secondary fw-bold rounded-pill flex-1 d-none d-md-flex align-items-center align-self-start gap-1 py-11 px-23"
                                     type="submit">
@@ -128,7 +135,8 @@
                                     </svg>
                                     <span>Filter</span>
                                 </button>
-                                <button class="btn btn-primary d-none d-md-block rounded-pill align-self-start flex-1 py-12 px-24"
+                                <button
+                                    class="btn btn-primary d-none d-md-block rounded-pill align-self-start flex-1 py-12 px-24"
                                     type="submit">Search</button>
                             </div>
 
@@ -165,10 +173,10 @@
         <div class="mb-3">Explore all things property</div>
         <div class="row mb-3">
             <div class="col-12">
-                <button type="button" class="btn btn-outline-secondary rounded-pill active">Buying</button>
-                <button class="btn btn-outline-secondary rounded-pill">Renting</button>
-                <button class="btn btn-outline-secondary rounded-pill">Selling</button>
-                <button class="btn btn-outline-secondary rounded-pill">Researching</button>
+                <button type="button" class="btn btn-outline-secondary rounded-pill px-18 fw-bold ">Buying</button>
+                <button class="btn btn-outline-secondary rounded-pill px-18 fw-bold">Renting</button>
+                <button class="btn btn-outline-secondary rounded-pill px-18 fw-bold">Selling</button>
+                <button class="btn btn-outline-secondary rounded-pill px-18 fw-bold">Researching</button>
             </div>
         </div>
 
@@ -218,10 +226,73 @@
 
         <!-- Latest news slider -->
         <div class="mb-3">Latest property news</div>
-        <div class="row mb-5">
-            <div class="col-12">
-                <div class="placeholder">Slider</div>
-            </div>
+        <div class="custom-carousel row mb-5">            
+                <div class="owl-carousel">
+                    <div class="item">
+                        <div class="card">
+                            <img src="/assets/image/c1-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">Celebrity beach home to make $1.75m in just one year</p>
+                              <span>2 mins read</span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="/assets/image/c1-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">Celebrity beach home to make $1.75m in just one year</p>
+                              <span>2 mins read</span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="/assets/image/c1-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">Celebrity beach home to make $1.75m in just one year</p>
+                              <span>2 mins read</span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="/assets/image/c1-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">Celebrity beach home to make $1.75m in just one year</p>
+                              <span>2 mins read</span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="/assets/image/c1-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">Celebrity beach home to make $1.75m in just one year</p>
+                              <span>2 mins read</span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="/assets/image/c1-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">Celebrity beach home to make $1.75m in just one year</p>
+                              <span>2 mins read</span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="/assets/image/c1-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">Celebrity beach home to make $1.75m in just one year</p>
+                              <span>2 mins read</span>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            
         </div>
 
         <!-- Local mortgage brokers slider -->
@@ -523,160 +594,29 @@
         </footer>
 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="scripts/autocomplete.js"></script>
+    <script src="scripts/search.js"></script>
     <script>
-        
-        $(window).ready(function () {
-            $.get('http://localhost:3000/search-suggestions').then(function(data){
-               selectedItem = generateAutoComplete('#buy-search', {
-                data, //fetch from API
-                multiple: false,  onClick: function (selectedItem) {
-                console.log('selected', selectedItem)
-                const selectedData = data.find(item => item.id === selectedItem);
-                if(selectedData){
-                    userSearchValue.push({
-                        id: selectedData.id,
-                        label: selectedData.label
-                    })
-                    rerenderSelectedItems();
+          $(window).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            nav: true, //show nav bar or not
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
                 }
-                console.log('userSearchValue:', userSearchValue);
-               ;
-            }});
-            let userSearchValue = [];    
-            
-            const searchBox = $('.search-box');
-            const input = searchBox.find('input');            
-            const results = searchBox.find('.results');
-            const selectedItems = searchBox.find('.selected-items');   
-            const recentSearch = $('.search-wrapper .recent-search');    
-            const resultList =  results.find('ul');         
-            //change input placeholder 
-            input.attr('placeholder','Search suburb, postcode or state');
-            let userInput = '';
-
-          
-            function generateRandomId(){
-                const time = Date.now().toString(36);
-                const num = Math.random().toString(36).substr(2, 5);;
-                return time + num;
-            }
-           
-            input.on('keyup', function (e) {
-            userInput = e.target.value;
-            const randomId = generateRandomId();
-          
-            resultList.append(`<div class="search-for" data-id="${randomId}">Search for: ${userInput}</div>`)            
-            let searchFor = searchBox.find('.search-for'); 
-            
-            searchFor.on('click', function(){
-                //if userInput is already in the UserInputValue array, it will not append or push into array
-                if (!userSearchValue.find(item => item.label === userInput)){
-            // selectedItems.append(`
-            //  <div class="selected-item" data-id=${randomId}>
-            //         ${userInput}
-            //         <button class="delete-item">
-            //             <svg class="CK__Icon--medium Pill__FatCross-sc-eiw3o3-0 hQjktV" viewBox="0 0 16 16" fill="none"
-            //                 xmlns="http://www.w3.org/2000/svg">
-            //                 <path fill-rule="evenodd" clip-rule="evenodd"
-            //                     d="M13.854 2.854a.5.5 0 0 0-.708-.708L8 7.293 2.854 2.146a.5.5 0 0 0-.708.708L7.293 8l-5.147 5.146a.5.5 0 0 0 .708.708L8 8.707l5.146 5.147a.5.5 0 0 0 .708-.708L8.707 8l5.147-5.146Z"
-            //                     fill="currentColor"></path>
-            //             </svg>
-            //         </button>
-            //     </div> 
-            // `)   
-                userSearchValue.push({
-                    id: randomId,
-                    label: userInput
-                });   
-                console.log(userSearchValue); 
-                
-            }
-            rerenderSelectedItems()      
-            // deleteSearchFor()
-            input.val('');
-            results.hide();
-            })           
-        }) 
-      
-        function rerenderSelectedItems(){
-            selectedItems.html('');  
-            userSearchValue.forEach(item => {
-                selectedItems.append(`
-             <div class="selected-item" data-id=${item.id}>
-                    ${item.label}
-                    <button class="delete-item">
-                        <svg class="CK__Icon--medium Pill__FatCross-sc-eiw3o3-0 hQjktV" viewBox="0 0 16 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M13.854 2.854a.5.5 0 0 0-.708-.708L8 7.293 2.854 2.146a.5.5 0 0 0-.708.708L7.293 8l-5.147 5.146a.5.5 0 0 0 .708.708L8 8.707l5.146 5.147a.5.5 0 0 0 .708-.708L8.707 8l5.147-5.146Z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </button>
-                </div> 
-            `)  
-            });
-            deleteSearchFor()
-            
-        }
-        // delete user Input search for selection
-        function deleteSearchFor(){                 
-            const deletedItem = $('.delete-item');  
-            deletedItem.on('click', function(e){
-            event.stopPropagation();
-            const selectedItem = $(this).parent();
-            const dataId = selectedItem.data('id');
-            const index = userSearchValue.findIndex(item => item.id === dataId);
-            if(index !== -1){   
-                userSearchValue.splice(index, 1);
-                console.log("after delete" + userSearchValue);
-                selectedItem.remove();
-            }           
-    })  
-    }           
-  
-    
-      
-    //handle when user click outside the input    
-     // Click handler to focus on input when click everywhere on search box
-     searchBox.on('click', function(event) {
-        event.stopPropagation();
-        input.focus();
-       if(input.is(':focus') && input.val().trim() === '' && userSearchValue.length === 0){
-        recentSearch.show();
-       }else{
-        recentSearch.hide();
-       }       
-    });   
-
-    input.on('input', function() {
-    if (input.is(':focus') && input.val().trim() === '' && userSearchValue.length === 0) {
-        recentSearch.show();
-    } else {
-        recentSearch.hide();
-    }
-});   
-    // Blur handler to hide results and clear input value
-    $(document).on('click', function(event) {
-      //checks if there are no elements matching event.target that are descendants of .search-box.
-        if (!searchBox.is(event.target) && searchBox.has(event.target).length === 0) {
-            results.hide();
-            recentSearch.hide(); // Hide .results element
-            input.val(''); // Clear input value
-        }
-    });     
-    })   
-});
-// {
-//     "result": [
-//       "repeat(1,10)",
-//       {      
-//           "country": "country()"      
-         
-//       }
-//     ]
-//   }
-      
+            },
+            stagePadding: 20,
+        });
+    });
     </script>
 </body>
 
