@@ -80,49 +80,49 @@
                 const nextBtn = $('.next')
 
                 function generatePagination() {
-                    
+
                     //handle pagination - render page number
                     if (page <= first + 2) {
                         for (let i = 1; i <= first + 3; i++) {
-                            $(`<li class="page-item"><a class="page-link" href="search.html?page=${i}">${i}</a></li>`)
-                                .insertBefore('.pagination .page-item:last');
+                            appendPageLink(i);
                         }
                     } else if (page >= last - 2) {
                         for (let i = last - 3; i <= last; i++) {
-                            $(`<li class="page-item"><a class="page-link" href="search.html?page=${i}">${i}</a></li>`)
-                                .insertBefore('.pagination .page-item:last');
+                            appendPageLink(i);
                         }
                     }
                     else {
-                        $(`<li class="page-item"><a class="page-link" href="search.html?page=${first}">${first}</a></li>
-                        <li>...</li>`)
-                            .insertBefore('.pagination .page-item:last');
-                        
-                        for (let i = page - 1; i <= (page + 1); i++) {
-                            console.log("page"+ page);
-                            $(`<li class="page-item"><a class="page-link" href="search.html?page=${i}">${i}</a></li>`)
-                                .insertBefore('.pagination .page-item:last');
-                        }
+                        appendPageLink(first)
+                        appendDot()
 
-                        $(`<li>...</li>
-                        <li class="page-item"><a class="page-link" href="search.html?page=${last}">${last}</a></li>`)
-                            .insertBefore('.pagination .page-item:last');
+                        for (let i = page - 1; i <= (page + 1); i++) {
+                            console.log("page" + page);
+                            appendPageLink(i);
+                        }
+                        appendDot()
+                        appendPageLink(last)
                     }
-                  
+
                     //pagination page number display logic
-                    if (page != 1) {
-                        prevBtn.removeClass('d-none')
-                    } else {
-                        prevBtn.addClass('d-none')
-                    }
-                    if (page != last) {
-                        nextBtn.removeClass('d-none')
-                    } else {
-                        nextBtn.addClass('d-none')
-                    }
+                    prevBtn.toggleClass('d-none', page === first)
+                    nextBtn.toggleClass('d-none', page === last)
                 }
+                function appendPageLink(pageNumber) {
+                    $(`<li class="page-item"><a class="page-link" href="search.html?page=${pageNumber}">${pageNumber}</a></li>`)
+                        .insertBefore('.pagination .page-item:last');
+                }
+                function appendDot() {
+                    $(`<li>...</li>`).insertBefore('.pagination .page-item:last');
+                }
+                //handle previous & next button of pagination
+                prevBtn.on('click', function () {
+                    $(".previous .page-link").attr("href", `search.html?page=${prev}`);
+                })
+                nextBtn.on('click', function () {
+                    $(".next .page-link").attr("href", `search.html?page=${next}`);
+                })
                 
-                generatePagination(); 
+                generatePagination();
 
                 //handle previous & next button of pagination
                 prevBtn.on('click', function () {
