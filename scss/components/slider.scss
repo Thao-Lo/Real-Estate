@@ -1,0 +1,145 @@
+@use'../global/function';
+@use '../global/variable' as *;
+
+@mixin slider-customer-size($width, $height) {
+    .custom-carousel {
+        position: relative;
+
+        .owl-stage {
+            padding: 0px !important;
+
+            .owl-item {
+                width: $width !important;
+                height: $height;
+
+                .card {
+                    height: 100%;
+                    width: 100%;
+                    border: none;
+
+                    img {
+                        width: 100%;
+                        height: 8rem;
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+@mixin slider-nav-button {
+    .owl-nav {
+        position: absolute;
+        top: 35%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .owl-prev,
+        .owl-next {
+            width: 2.25rem;
+            height: 2.25rem;
+            border: 1px solid $ck-backgroundPrimary;
+            border-radius: 50%;
+            background-color: $ck-backgroundPrimary !important;
+            padding: 0.75rem !important;
+            box-shadow: 0.125rem 0.25rem rgba($black, .075);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                font-size: 1.5rem;
+            }
+
+        }
+
+        .owl-prev {
+            margin-left: 1%;
+        }
+
+        .owl-next {
+            margin-right: 3%;
+        }
+    }
+}
+
+.local-mortage-slider {
+    @include slider-customer-size(13.5rem, 21.25rem);
+    .custom-carousel { 
+        .owl-stage {  
+
+            .owl-item {               
+
+                .card {    
+                                  
+                    .card-header{
+                        background: #006875; 
+                        height: 3.125rem; 
+                        border-bottom: none;
+                        img{
+                            width:1.25rem;
+                            height: 1.25rem;
+                            border-radius: 100%;
+                        } 
+                        p{
+                            color: white;
+                        }                 
+                    }
+                    .card-body{
+                        padding-bottom: 0;
+                       .mortage-logo {
+                        width: 8.438rem;
+                        height: 3.375rem;
+                        }
+                        .broker-avatar{
+                            width: 4rem;
+                            height: 4rem;
+                            border-radius: 100%;
+                        }
+                        .card-description{
+                            font-size: 0.875rem;
+                            color: $ck-textSecondary;
+                        }
+                    }
+                   .card-footer{
+                    background: none;
+                    border-top: none;
+                    padding-bottom: 0.75rem;
+                    a{
+                        color: $ck-textSecondary
+                    }
+                    .footer-link{
+                        color: $ck-linkPrimary;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline
+                        }
+                    }
+                   }
+
+                }
+            }
+        }
+
+    }
+
+}
+
+.property-new-slider {
+    @include slider-customer-size(14rem, 13rem);
+}
+.property-new-slider,
+.local-mortage-slider {
+    max-width: 69.375rem;
+
+    @media screen and (max-width: 900px) {
+        max-width: 50rem;
+    }
+
+    @include slider-nav-button()
+}
+
+

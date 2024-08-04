@@ -1,0 +1,24 @@
+@use 'variable' as *;
+
+@mixin buttonStyle($color: red, $bg){
+    border: 1px solid $color;
+    background-color: $bg;
+    border-radius: 4px;
+}
+
+%button-tab{
+    border-radius: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    color: $text-secondary;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 100%;
+    background: transparent;
+    transition: background-color 200ms ease-in 0s;
+}

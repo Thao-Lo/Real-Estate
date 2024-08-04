@@ -1,4 +1,10 @@
 @use 'global';
 @use 'variable';
 @use '../components/search';
-@use '../components/spacing'
+@use 'spacing';
+@use 'typography';
+@use '../components/card.scss';
+@use '../components/filter.scss';
+@use '../components/slider.scss';
+
+

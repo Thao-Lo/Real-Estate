@@ -1,0 +1,39 @@
+@use '../global/function.scss';
+@use '../global/variable' as *;
+
+.filter-body {
+    .nav-pills {
+        display: flex;
+        justify-content: space-around;
+
+
+        .nav-item {
+            flex: 1;
+
+            .nav-link {
+                @extend %button-tab;
+
+                &.active {
+                    border-bottom: 2px solid red;
+                }
+                &:hover{
+                    text-decoration: underline;
+                    color: $text-selected;
+                    background: $bg-hover-primary;
+                }
+                &:active{
+                    background: $bg-press-primary;
+                }
+            }
+        }
+    }
+}
+.collapse-link{
+    text-decoration: none;
+    margin-right: 0.5rem;
+    color: $filter-link;
+    font-weight: 600;
+    &:hover{
+        text-decoration: underline;
+    }
+}

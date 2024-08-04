@@ -1,0 +1,44 @@
+@use'../global/function';
+@use '../global/variable' as *;
+
+
+.product-entry-point {
+
+    .product-card-section {
+
+
+        .card-item {
+
+            .card {
+                padding: 1rem;
+                border-radius: 1rem;
+              
+                @media screen and (max-width: 900px){
+                    padding-bottom: 0.25rem;
+                    min-width: 25rem;
+                }
+                .card-img-top {
+                    width: 7.5rem;
+                    height: 7.5rem;
+                    margin-bottom: 1.5rem;
+                    border-radius: 25%;
+
+                }
+
+                .card-body {
+                    padding: 0;
+
+                    .card-link {
+                        text-decoration: none;
+                        color: $ck-linkPrimary;
+                        font-weight: 600;
+                    }
+                }
+
+            }
+        }
+
+
+    }
+}
+

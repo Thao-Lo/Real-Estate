@@ -86,20 +86,24 @@
                         for (let i = 1; i <= first + 3; i++) {
                             appendPageLink(i);
                         }
+                        appendEllipsis()
+                        appendPageLink(last)
                     } else if (page >= last - 2) {
+                        appendPageLink(first)
+                        appendEllipsis()
                         for (let i = last - 3; i <= last; i++) {
                             appendPageLink(i);
                         }
                     }
                     else {
                         appendPageLink(first)
-                        appendDot()
+                        appendEllipsis()
 
                         for (let i = page - 1; i <= (page + 1); i++) {
                             console.log("page" + page);
                             appendPageLink(i);
                         }
-                        appendDot()
+                        appendEllipsis()
                         appendPageLink(last)
                     }
 
@@ -108,10 +112,10 @@
                     nextBtn.toggleClass('d-none', page === last)
                 }
                 function appendPageLink(pageNumber) {
-                    $(`<li class="page-item"><a class="page-link" href="search.html?page=${pageNumber}">${pageNumber}</a></li>`)
+                    $(`<li class="page-item"><a class="page-link ${pageNumber == page?"active": ""}" href="search.html?page=${pageNumber}">${pageNumber}</a></li>`)
                         .insertBefore('.pagination .page-item:last');
                 }
-                function appendDot() {
+                function appendEllipsis() {
                     $(`<li>...</li>`).insertBefore('.pagination .page-item:last');
                 }
                 //handle previous & next button of pagination
@@ -121,7 +125,7 @@
                 nextBtn.on('click', function () {
                     $(".next .page-link").attr("href", `search.html?page=${next}`);
                 })
-                
+
                 generatePagination();
 
                 //handle previous & next button of pagination

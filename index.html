@@ -16,6 +16,11 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" $y="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -28,9 +33,9 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" style="max-width: 1110px;">
         <nav class="navbar navbar-expand-xl">
-            <div class="container-fluid d-flex">
+            <div class="container-fluid d-flex align-items-baseline">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -126,7 +131,7 @@
                                 </div>
                                 <button
                                     class="btn btn-outline-secondary fw-bold rounded-pill flex-1 d-none d-md-flex align-items-center align-self-start gap-1 py-11 px-23"
-                                    type="submit">
+                                    type="button" data-bs-toggle="modal" data-bs-target="#filter">
                                     <svg class="CK__Icon--medium" viewBox="0 0 16 16" fill="none" width="1rem"
                                         height="1rem" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -136,10 +141,196 @@
                                     <span>Filter</span>
                                 </button>
                                 <button
-                                    class="btn btn-primary d-none d-md-block rounded-pill align-self-start flex-1 py-12 px-24"
+                                    class="btn btn-primary d-none d-md-block rounded-pill align-self-start flex-1 py-11 px-23"
                                     type="submit">Search</button>
                             </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="filter" data-bs-backdrop="static" data-bs-keyboard="false"
+                                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-3 w-100 text-center fw-semibold"
+                                                id="staticBackdropLabel">Filter</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="pills-buy-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+                                                        role="tab" aria-controls="pills-buy"
+                                                        aria-selected="true">Buy</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-rent-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                                        aria-controls="pills-rent" aria-selected="false">Rent</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-sold-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-contact" type="button" role="tab"
+                                                        aria-controls="pills-sold" aria-selected="false">Sold</button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="pills-tabContent">
+                                                <!-- Filter-buy -->
+                                                <div class="tab-pane fade show active" id="pills-buy" role="tabpanel"
+                                                    aria-labelledby="pills-buy-tab" tabindex="0">
+                                                    <div class="fw-semibold fs-5">Property type</div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="all-type">
+                                                                <label class="form-check-label" for="all-type">
+                                                                    All types
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="house">
+                                                                <label class="form-check-label" for="house">
+                                                                    House
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="townhouse">
+                                                                <label class="form-check-label" for="townhouse">
+                                                                    Townhouse
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="apartment">
+                                                                <label class="form-check-label" for="apartment">
+                                                                    Apartment & Unit
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="Villa">
+                                                                <label class="form-check-label" for="Villa">
+                                                                    Villa
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="retirement-living">
+                                                                <label class="form-check-label" for="retirement-living">
+                                                                    Retirement Living
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="land">
+                                                                <label class="form-check-label" for="land">
+                                                                    Land
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="acreage">
+                                                                <label class="form-check-label" for="acreage">
+                                                                    Acreage
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="rural">
+                                                                <label class="form-check-label" for="rural">
+                                                                    Rural
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="block-of-unit">
+                                                                <label class="form-check-label" for="block-of-unit">
+                                                                    Block Of Units
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="fw-semibold fs-5">Price</div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="">Min</div>
+                                                            <div class="input-group mb-3">
+                                                                <select class="form-select" id="inputGroupSelect02">
+                                                                    <option selected>Any</option>
+                                                                    <option value="1">$50,000</option>
+                                                                    <option value="2">$75,000</option>
+                                                                    <option value="3">$100,000</option>
+                                                                    <option value="4">$125,000</option>
+                                                                    <option value="5">$150,000</option>
+                                                                    <option value="6">$175,000</option>
+                                                                    <option value="7">$200,000</option>
+                                                                    <option value="8">$225,000</option>
+                                                                    <option value="9">$250,000</option>
+                                                                    <option value="10">$275,000</option>
+                                                                    <option value="11">$300,000</option>
+                                                                    <option value="12">$325,000</option>
+                                                                    <option value="13">$350,000</option>
+                                                                </select>
+                                                            </div>
 
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="">Max</div>
+                                                            <div class="input-group mb-3">
+                                                                <select class="form-select" id="inputGroupSelect02">
+                                                                    <option selected>Any</option>
+                                                                    <option value="1">$50,000</option>
+                                                                    <option value="2">$75,000</option>
+                                                                    <option value="3">$100,000</option>
+                                                                    <option value="4">$125,000</option>
+                                                                    <option value="5">$150,000</option>
+                                                                    <option value="6">$175,000</option>
+                                                                    <option value="7">$200,000</option>
+                                                                    <option value="8">$225,000</option>
+                                                                    <option value="9">$250,000</option>
+                                                                    <option value="10">$275,000</option>
+                                                                    <option value="11">$300,000</option>
+                                                                    <option value="12">$325,000</option>
+                                                                    <option value="13">$350,000</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="price-check-box">
+                                                        <label class="form-check-label" for="rice-check-box">
+                                                            Only show properties with a price
+                                                        </label>
+                                                    </div>
+                                                    <hr>
+
+                                                </div>
+                                                <!-- Filter Rent -->
+                                                <div class="tab-pane fade" id="pills-rent" role="tabpanel"
+                                                    aria-labelledby="pills-rent-tab" tabindex="0">...</div>
+
+                                                <!-- Filter Sold -->
+                                                <div class="tab-pane fade" id="pills-sold" role="tabpanel"
+                                                    aria-labelledby="pills-sold-tab" tabindex="0">...</div>
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Understood</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End modal -->
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             input 2
@@ -170,147 +361,204 @@
 
 
         <!-- Explore -->
-        <div class="mb-3">Explore all things property</div>
-        <div class="row mb-3">
-            <div class="col-12">
-                <button type="button" class="btn btn-outline-secondary rounded-pill px-18 fw-bold ">Buying</button>
-                <button class="btn btn-outline-secondary rounded-pill px-18 fw-bold">Renting</button>
-                <button class="btn btn-outline-secondary rounded-pill px-18 fw-bold">Selling</button>
-                <button class="btn btn-outline-secondary rounded-pill px-18 fw-bold">Researching</button>
+        <section class="product-entry-point my-4">
+            <div class="mb-3 fs-4 fw-bold lh-lg">Explore all things property</div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-18 fw-bold ">Buying</button>
+                    <button class="btn btn-outline-secondary rounded-pill px-18 fw-bold">Renting</button>
+                    <button class="btn btn-outline-secondary rounded-pill px-18 fw-bold">Selling</button>
+                    <button class="btn btn-outline-secondary rounded-pill px-18 fw-bold">Researching</button>
+                </div>
             </div>
-        </div>
 
-        <!-- card -->
-
-        <div class="row gy-sm-2 mb-5">
-            <div class="col-md-4 col-sm-12">
-                <div class="card">
-                    <img src="/assets/image/card-image.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Get estimated property prices with a realEstimate</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+            <!-- card -->
+            <div class="product-card-section row gy-2 mb-5">
+                <div class="card-item col-lg-4 col-md-12 pe-2 ">
+                    <div class="card h-100 flex-row gap-3 flex-lg-column">
+                        <div class="d-flex justify-content-center">
+                            <img src="/assets/image/pro-1.JPG" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fs-5 fw-semibold lh-md mb-1">Get estimated property prices with a
+                                realEstimate</h5>
+                            <p class="card-text mb-1">See how much your property's worth whether you own it or want to
+                                buy it.</p>
+                            <a href="#" class="card-link">Check property values</a>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Check property values</a>
+                </div>
+                <div class="card-item col-lg-4 col-md-12 pe-2">
+                    <div class="card h-100  flex-row gap-3 flex-lg-column">
+                        <div class="d-flex justify-content-center">
+                            <img src="/assets/image/pro-2.JPG" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-1">Need help with a mortgage?</h5>
+                            <p class="card-text mb-1">Compare your finance options to make an informed call.</p>
+                            <a href="#" class="card-link">Explore home loans</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item col-lg-4 col-md-12 pe-2">
+                    <div class="card h-100 flex-row gap-3 flex-lg-column">
+                        <div class="d-flex justify-content-center">
+                            <img src="/assets/image/pro-3.JPG" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-1">Explore suburb profiles</h5>
+                            <p class="card-text mb-1">Check out different suburb profiles and find one that's right for
+                                you.</p>
+                            <a href="#" class="card-link">Research suburbs</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12">
-                <div class="card">
-                    <img src="/assets/image/card-image.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Get estimated property prices with a realEstimate</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Check property values</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <div class="card">
-                    <img src="/assets/image/card-image.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Get estimated property prices with a realEstimate</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Check property values</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
 
-        <!-- Latest news slider -->
-        <div class="mb-3">Latest property news</div>
-        <div class="custom-carousel row mb-5">            
+
+
+
+        <!-- Latest property news slider -->
+        <div class="mb-3 fs-4 fw-bold lh-lg">Latest property news</div>
+        <div class="property-new-slider">
+            <div class="custom-carousel row mb-5">
                 <div class="owl-carousel">
-                    <div class="item">
-                        <div class="card">
-                            <img src="/assets/image/c1-1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Celebrity beach home to make $1.75m in just one year</p>
-                              <span>2 mins read</span>
-                            </div>
-                          </div>
+
+                    <div class="card ">
+                        <img src="/assets/image/carousel-1.1.jpeg" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body p-0 mt-075">
+                            <p class="card-text mb-0 fw-medium">Celebrity beach home to make $1.75m in just one year</p>
+                            <span class="fs-075">2 mins read</span>
+                        </div>
                     </div>
-                    <div class="item">
-                        <div class="card">
-                            <img src="/assets/image/c1-1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Celebrity beach home to make $1.75m in just one year</p>
-                              <span>2 mins read</span>
-                            </div>
-                          </div>
+
+
+                    <div class="card">
+                        <img src="/assets/image/carousel-1.2.jpeg" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body p-0 mt-075">
+                            <p class="card-text mb-0 fw-medium">Celebrity beach home to make $1.75m in just one year</p>
+                            <span class="fs-075">2 mins read</span>
+                        </div>
                     </div>
-                    <div class="item">
-                        <div class="card">
-                            <img src="/assets/image/c1-1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Celebrity beach home to make $1.75m in just one year</p>
-                              <span>2 mins read</span>
-                            </div>
-                          </div>
+
+
+                    <div class="card">
+                        <img src="/assets/image/carousel-1.3.jpeg" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body p-0 mt-075">
+                            <p class="card-text mb-0 fw-medium">Celebrity beach home to make $1.75m in just one year</p>
+                            <span class="fs-075">2 mins read</span>
+                        </div>
                     </div>
-                    <div class="item">
-                        <div class="card">
-                            <img src="/assets/image/c1-1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Celebrity beach home to make $1.75m in just one year</p>
-                              <span>2 mins read</span>
-                            </div>
-                          </div>
+
+
+                    <div class="card">
+                        <img src="/assets/image/carousel-1.4.jpeg" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body p-0 mt-075">
+                            <p class="card-text mb-0 fw-medium">Celebrity beach home to make $1.75m in just one year</p>
+                            <span class="fs-075">2 mins read</span>
+                        </div>
                     </div>
-                    <div class="item">
-                        <div class="card">
-                            <img src="/assets/image/c1-1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Celebrity beach home to make $1.75m in just one year</p>
-                              <span>2 mins read</span>
-                            </div>
-                          </div>
+                    <div class="card">
+                        <img src="/assets/image/carousel-1.5.jpeg" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body p-0 mt-075">
+                            <p class="card-text mb-0 fw-medium">Celebrity beach home to make $1.75m in just one year</p>
+                            <span class="fs-075">2 mins read</span>
+                        </div>
                     </div>
-                    <div class="item">
-                        <div class="card">
-                            <img src="/assets/image/c1-1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Celebrity beach home to make $1.75m in just one year</p>
-                              <span>2 mins read</span>
-                            </div>
-                          </div>
+
+                    <div class="card">
+                        <img src="/assets/image/carousel-1.8.jpeg" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body p-0 mt-075">
+                            <p class="card-text mb-0 fw-medium">Celebrity beach home to make $1.75m in just one year</p>
+                            <span class="fs-075">2 mins read</span>
+                        </div>
                     </div>
-                    <div class="item">
-                        <div class="card">
-                            <img src="/assets/image/c1-1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Celebrity beach home to make $1.75m in just one year</p>
-                              <span>2 mins read</span>
-                            </div>
-                          </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Local mortgage brokers slider -->
+        <div class="mb-3 fs-4 fw-bold lh-lg">Local mortgage brokers</div>
+        <div class="local-mortage-slider">
+            <div class="custom-carousel row mb-5">
+                <div class="owl-carousel card-group">
+                    <div class="card border border-light-subtle shadow-sm">
+                        <div class="card-header bg-transparent "></div>
+                        <div class="card-body">
+                            <img src="/assets/image/carousel-2.1.jpeg" class="mortage-logo" alt="...">
+                            <p class="card-description ">Enter a postcode to find mortage brokers near you.</p>
+
+                        </div>
+                        <div class="card-footer">
+                            <label for="inputPassword5" class="form-label fs-0875 fw-semibold">Postcode</label>
+                            <input type="postcode" id="inputPostcode" class="form-control p-0 border-secondary mb-2">
+                            <button type="button" class="btn btn-dark w-100 fs-0875">Find a broker</button>
+                        </div>
+                    </div>
+                    <div class="card border border-light-subtle shadow-sm">
+                        <div class="card-header d-flex align-items-center gap-1">
+                            <img src="/assets/image/mortage-logo.JPG" class="" alt="">
+                            <p class="mb-0">Mortage Choice</p>
+                        </div>
+                        <div class="card-body">
+                            <img src="/assets/image/carousel-2.2.jpeg" class="broker-avatar mb-1" alt="...">
+                            <p class="fw-semibold mb-1">John Chappelow</p>
+                            <p class="mb-075">Mortage broker</p>
+                            <p class="card-description ">Based in Sydney.</p>
+
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="fs-0875 mb-2">See more details</a>
+                            <button type="button" class="btn btn-outline-dark w-100 fs-0875">Find a broker</button>
+                        </div>
+                    </div>
+                    <div class="card border border-light-subtle shadow-sm">
+                        <div class="card-header d-flex align-items-center gap-1">
+                            <img src="/assets/image/mortage-logo.JPG" class="" alt="">
+                            <p class="mb-0">Mortage Choice</p>
+                        </div>
+                        <div class="card-body">
+                            <img src="/assets/image/carousel-2.2.jpeg" class="broker-avatar mb-1" alt="...">
+                            <p class="fw-semibold mb-1">John Chappelow</p>
+                            <p class="mb-075">Mortage broker</p>
+                            <p class="card-description ">Based in Sydney.</p>
+
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="fs-0875 mb-2">See more details</a>
+                            <button type="button" class="btn btn-outline-dark w-100 fs-0875">Find a broker</button>
+                        </div>
+                    </div>
+                    <div class="card border border-light-subtle shadow-sm">
+                        <div class="card-header bg-transparent">                           
+                        </div>
+                        <div class="card-body">
+                            <img src="/assets/image/carousel-2.7.jpeg" class="broker-avatar mb-1" alt="...">
+                            <p class="fw-semibold mb-1">Not sure who is the best for you</p>                           
+                            <p class="card-description ">Our experts can help you connect with the right broker</p>
+
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="fw-semibold mb-2 footer-link">Request a call back</a>                            
+                        </div>
+                    </div>
+                    <div class="card border border-light-subtle shadow-sm">
+                        <div class="card-header bg-transparent "></div>
+                        <div class="card-body">
+                            <img src="/assets/image/carousel-2.1.jpeg" class="mortage-logo" alt="...">
+                            <p class="card-description ">Whether you are refinancing or investing, Mortgage Choice brokers are with you every step of the way.</p>
+
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="fw-semibold mb-2 footer-link">Request a call back</a>                            
+                        </div>
                     </div>
                 </div>
-            
-        </div>
-
-        <!-- Local mortgage brokers slider -->
-        <div class="mb-3">Local mortgage brokers</div>
-        <div class="row mb-5">
-            <div class="col-12">
-                <div class="placeholder">Slider</div>
             </div>
-        </div>
 
-        <!-- tab -->
-        <div class="mb-3">Local mortgage brokers</div>
-        <div class="row mb-5">
-            <div class="col-12">
-                <div class="placeholder">Slider</div>
-            </div>
         </div>
-        <hr>
 
         <!-- tab -->
 
@@ -600,23 +848,28 @@
     <script src="scripts/autocomplete.js"></script>
     <script src="scripts/search.js"></script>
     <script>
-          $(window).ready(function () {
-        $(".owl-carousel").owlCarousel({
-            nav: true, //show nav bar or not
-            responsive: {
-                0: {
-                    items: 1
+        $(window).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                stagePadding: 0,
+                loop: false,
+                margin: 16,
+                nav: true, //show nav bar or not
+                autoWidth: false,
+                slideBy: 2,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    900: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
                 },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 5
-                }
-            },
-            stagePadding: 20,
+                stagePadding: 20,
+            });
         });
-    });
     </script>
 </body>
 
