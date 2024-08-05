@@ -24,7 +24,7 @@
 
 .btn-outline-secondary {
   --bs-btn-color: #3D3B40;
-  --bs-btn-border-color: #959199;
+  --bs-btn-border-color: #E5E3E8;
   --bs-btn-hover-color: #3D3B40;
   --bs-btn-hover-bg: #F6F5F7;
   --bs-btn-hover-border-color: #3D3B40;
@@ -69,6 +69,23 @@ nav .navbar-brand img {
 }
 nav .nav-item a {
   font-weight: 500;
+}
+
+.filter-body .nav-pills .nav-item .nav-link {
+  border-radius: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  color: #726e75;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 100%;
+  background: transparent;
+  transition: background-color 200ms ease-in 0s;
 }
 
 .search .recent-search, .search .tab-content .search-section .search-box #buy-search .results {
@@ -229,23 +246,6 @@ nav .nav-item a {
 
 .fs-0875 {
   font-size: 0.875rem;
-}
-
-.filter-body .nav-pills .nav-item .nav-link {
-  border-radius: 0;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 500;
-  padding: 0.5rem 0.75rem;
-  color: #726e75;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 3rem;
-  width: 100%;
-  background: transparent;
-  transition: background-color 200ms ease-in 0s;
 }
 
 .product-entry-point .product-card-section .card-item .card {
@@ -432,6 +432,91 @@ nav .nav-item a {
 .property-new-slider .owl-nav .owl-next,
 .local-mortage-slider .owl-nav .owl-next {
   margin-right: 3%;
+}
+
+.real-estate-area-section {
+  margin-bottom: 3.5rem;
+}
+.real-estate-area-section .nav-tabs {
+  overflow: hidden;
+  align-items: center;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.real-estate-area-section .nav-tabs .nav-item {
+  width: 100%;
+  flex: 1;
+}
+.real-estate-area-section .nav-tabs .nav-item .nav-link {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #726E75;
+  text-decoration: none;
+  background: 0 0;
+  border: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-bottom 0.1s ease-in-out;
+}
+.real-estate-area-section .nav-tabs .nav-item .nav-link:hover {
+  text-decoration: underline;
+  background-color: #F6F5F7;
+  color: #3D3B40;
+}
+.real-estate-area-section .nav-tabs .nav-item .nav-link:active {
+  background-color: #E5E3E8;
+}
+.real-estate-area-section .nav-tabs .nav-item .active {
+  border-bottom: 3px solid #e4002b;
+}
+.real-estate-area-section .nav-tabs .nav-item .nav-link:focus {
+  border-bottom: 3px solid #e4002b;
+}
+.real-estate-area-section .tab-content .tab-list div ul {
+  padding: 0;
+}
+.real-estate-area-section .tab-content .tab-list div ul li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+.real-estate-area-section .tab-content .tab-list div ul li a {
+  color: #726E75;
+}
+
+.advertising-section {
+  border-top: 1px solid #E5E3E8;
+  padding: 0.75rem;
+}
+.advertising-section .social-media .social-media-icon {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.advertising-section .social-media .social-media-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.advertising-section .social-media .social-media-icon svg path {
+  transition: fill 0.3s ease;
+}
+.advertising-section .social-media .social-media-icon svg path:hover {
+  fill: #242326;
+}
+.advertising-section .page-ads a {
+  font-size: 0.875rem;
+  color: #726E75;
+  text-decoration: none;
+}
+.advertising-section .page-ads a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #F6F5F7;
 }
 
 /*# sourceMappingURL=index.css.map */

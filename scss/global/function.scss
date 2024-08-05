@@ -22,3 +22,54 @@
     background: transparent;
     transition: background-color 200ms ease-in 0s;
 }
+
+@mixin toggle-nav-bar {
+    .nav-tabs {
+        overflow: hidden;
+        align-items: center;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+
+        .nav-item {
+            width: 100%;
+            flex: 1;
+
+            .nav-link {
+                display: block;
+                width: 100%;
+                padding: 0.5rem 0.75rem;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                font-weight: 500;
+                color: #726E75;
+                text-decoration: none;
+                background: 0 0;
+                // border-bottom: 1px solid #E5E3E8;
+                border: none;
+                transition: color .15s ease-in-out, background-color .15s ease-in-out, border-bottom .1s ease-in-out;
+
+            }
+
+            .nav-link:hover {
+                text-decoration: underline;
+                background-color: $bg-hover-primary;
+                ;
+                color: #3D3B40;
+            }
+
+            .nav-link:active {
+                background-color: #E5E3E8;
+
+            }
+
+            .active {
+                border-bottom: 3px solid #e4002b;
+            }
+
+            .nav-link:focus {
+                border-bottom: 3px solid #e4002b;
+            }
+        }
+    }
+}
