@@ -1,7 +1,7 @@
 @use'../global/function';
 @use '../global/variable' as *;
 
-@mixin slider-customer-size($width, $height) {
+@mixin slider-customer-size($width, $height, $cardBody: null) {
     .custom-carousel {
         position: relative;
 
@@ -16,6 +16,18 @@
                     height: 100%;
                     width: 100%;
                     border: none;
+                    text-decoration: none;
+
+                    .card-body {
+                        p {
+                            height: $cardBody;                                               
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                        }
+                    }
 
                     img {
                         width: 100%;
@@ -68,57 +80,68 @@
 
 .local-mortage-slider {
     @include slider-customer-size(13.5rem, 21.25rem);
-    .custom-carousel { 
-        .owl-stage {  
 
-            .owl-item {               
+    .custom-carousel {
+        .owl-stage {
 
-                .card {    
-                                  
-                    .card-header{
-                        background: #006875; 
-                        height: 3.125rem; 
+            .owl-item {
+
+                .card {
+
+                    .card-header {
+                        background: #006875;
+                        height: 3.125rem;
                         border-bottom: none;
-                        img{
-                            width:1.25rem;
+
+                        img {
+                            width: 1.25rem;
                             height: 1.25rem;
                             border-radius: 100%;
-                        } 
-                        p{
-                            color: white;
-                        }                 
-                    }
-                    .card-body{
-                        padding-bottom: 0;
-                       .mortage-logo {
-                        width: 8.438rem;
-                        height: 3.375rem;
                         }
-                        .broker-avatar{
+
+                        p {
+                            color: white;
+                        }
+                    }
+
+                    .card-body {
+                        padding-bottom: 0;
+
+                        .mortage-logo {
+                            width: 8.438rem;
+                            height: 3.375rem;
+                        }
+
+                        .broker-avatar {
                             width: 4rem;
                             height: 4rem;
                             border-radius: 100%;
                         }
-                        .card-description{
+
+                        .card-description {
                             font-size: 0.875rem;
                             color: $ck-textSecondary;
                         }
                     }
-                   .card-footer{
-                    background: none;
-                    border-top: none;
-                    padding-bottom: 0.75rem;
-                    a{
-                        color: $ck-textSecondary
-                    }
-                    .footer-link{
-                        color: $ck-linkPrimary;
-                        text-decoration: none;
-                        &:hover{
-                            text-decoration: underline
+
+                    .card-footer {
+                        background: none;
+                        border-top: none;
+                        padding-bottom: 0.75rem;
+
+                        a {
+                            color: $ck-textSecondary
+                        }
+
+                        .footer-link {
+                            color: $ck-linkPrimary;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline
+                            }
                         }
                     }
-                   }
 
                 }
             }
@@ -129,8 +152,9 @@
 }
 
 .property-new-slider {
-    @include slider-customer-size(14rem, 13rem);
+    @include slider-customer-size(14rem, 13rem, 3rem);
 }
+
 .property-new-slider,
 .local-mortage-slider {
     max-width: 69.375rem;
@@ -141,5 +165,3 @@
 
     @include slider-nav-button()
 }
-
-

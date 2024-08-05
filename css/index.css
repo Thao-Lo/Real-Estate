@@ -64,6 +64,16 @@
   cursor: pointer;
 }
 
+.custom-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #242326;
+  transition: text-decoration 0.3s ease-out;
+}
+.custom-link:hover {
+  text-decoration: underline;
+}
+
 nav .navbar-brand img {
   width: 200px;
 }
@@ -316,6 +326,14 @@ nav .nav-item a {
   height: 100%;
   width: 100%;
   border: none;
+  text-decoration: none;
+}
+.local-mortage-slider .custom-carousel .owl-stage .owl-item .card .card-body p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .local-mortage-slider .custom-carousel .owl-stage .owl-item .card img {
   width: 100%;
@@ -380,6 +398,15 @@ nav .nav-item a {
   height: 100%;
   width: 100%;
   border: none;
+  text-decoration: none;
+}
+.property-new-slider .custom-carousel .owl-stage .owl-item .card .card-body p {
+  height: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .property-new-slider .custom-carousel .owl-stage .owl-item .card img {
   width: 100%;
