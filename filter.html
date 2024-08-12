@@ -46,94 +46,94 @@
                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pills-buy-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-buy"
-                                    aria-selected="true">Buy</button>
+                                    data-bs-target="#pills-filter-buy" type="button" role="tab"
+                                    aria-controls="pills-buy" aria-selected="true">Buy</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-rent-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-rent"
-                                    aria-selected="false">Rent</button>
+                                    data-bs-target="#pills-filter-rent" type="button" role="tab"
+                                    aria-controls="pills-rent" aria-selected="false">Rent</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-sold-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-sold"
-                                    aria-selected="false">Sold</button>
+                                    data-bs-target="#pills-filter-sold" type="button" role="tab"
+                                    aria-controls="pills-sold" aria-selected="false">Sold</button>
                             </li>
                         </ul>
                         <div class="tab-content" id="pills-tabContent">
                             <!-- Filter-buy -->
-                            <div class="tab-pane fade show active" id="pills-buy" role="tabpanel"
+                            <div class="tab-pane fade show active" id="pills-filter-buy" role="tabpanel"
                                 aria-labelledby="pills-buy-tab" tabindex="0">
                                 <!-- PROPERTY TYPES -->
-                                <div class="fw-semibold fs-5 mb-3 lh-base">Property type</div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="form-check py-2 lh-base ">
+                                <div class="property-type">
+                                    <div class="fw-semibold fs-5 mb-3 lh-base">Property type</div>
+                                    <div class="row ps-3">
+
+                                        <div class="form-check py-2 lh-base  col-6">
                                             <input class="form-check-input cursor-pointer" type="checkbox" value=""
                                                 id="all-type">
                                             <label class="form-check-label cursor-pointer" for="all-type">
                                                 All types
                                             </label>
                                         </div>
-                                        <div class="form-check py-2 lh-base">
+                                        <div class="form-check py-2 lh-base col-6">
                                             <input class="form-check-input cursor-pointer" type="checkbox" value=""
                                                 id="house">
                                             <label class="form-check-label cursor-pointer" for="house">
                                                 House
                                             </label>
                                         </div>
-                                        <div class="form-check py-2 lh-base">
+                                        <div class="form-check py-2 lh-base col-6">
                                             <input class="form-check-input cursor-pointer" type="checkbox" value=""
                                                 id="townhouse">
                                             <label class="form-check-label cursor-pointer" for="townhouse">
                                                 Townhouse
                                             </label>
                                         </div>
-                                        <div class="form-check py-2 lh-base">
+                                        <div class="form-check py-2 lh-base col-6">
                                             <input class="form-check-input cursor-pointer" type="checkbox" value=""
                                                 id="apartment">
                                             <label class="form-check-label cursor-pointer" for="apartment">
                                                 Apartment & Unit
                                             </label>
                                         </div>
-                                        <div class="form-check py-2 lh-base">
+                                        <div class="form-check py-2 lh-base col-6">
                                             <input class="form-check-input cursor-pointer" type="checkbox" value=""
                                                 id="Villa">
                                             <label class="form-check-label cursor-pointer" for="Villa">
                                                 Villa
                                             </label>
                                         </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-check py-2 lh-base">
+
+                                        <div class="form-check py-2 lh-base col-6">
                                             <input class="form-check-input cursor-pointer" type="checkbox" value=""
                                                 id="retirement-living">
                                             <label class="form-check-label cursor-pointer" for="retirement-living">
                                                 Retirement Living
                                             </label>
                                         </div>
-                                        <div class="form-check py-2 lh-base">
+                                        <div class="form-check py-2 lh-base col-6">
                                             <input class="form-check-input cursor-pointer" type="checkbox" value=""
                                                 id="land">
                                             <label class="form-check-label cursor-pointer" for="land">
                                                 Land
                                             </label>
                                         </div>
-                                        <div class="form-check py-2 lh-base">
+                                        <div class="form-check py-2 lh-base col-6">
                                             <input class="form-check-input cursor-pointer" type="checkbox" value=""
                                                 id="acreage">
                                             <label class="form-check-label cursor-pointer" for="acreage">
                                                 Acreage
                                             </label>
                                         </div>
-                                        <div class="form-check py-2 lh-base">
+                                        <div class="form-check py-2 lh-base col-6">
                                             <input class="form-check-input cursor-pointer" type="checkbox" value=""
                                                 id="rural">
                                             <label class="form-check-label cursor-pointer" for="rural">
                                                 Rural
                                             </label>
                                         </div>
-                                        <div class="form-check py-2 lh-base">
+                                        <div class="form-check py-2 lh-base col-6">
                                             <input class="form-check-input cursor-pointer" type="checkbox" value=""
                                                 id="block-of-unit">
                                             <label class="form-check-label cursor-pointer" for="block-of-unit">
@@ -167,7 +167,7 @@
                                                 <option class="py-12" value="13">$350,000</option>
                                             </select>
                                         </div>
-
+                                  
                                     </div>
                                     <div class="col-6">
                                         <div class="mb-1 fw-medium">Max</div>
@@ -760,6 +760,14 @@
                                     aria-labelledby="pills-sold-tab" tabindex="0">...</div>
 
                             </div>
+                            <div class="tab-pane fade" id="pills-filter-rent" role="tabpanel"
+                                aria-labelledby="pills-rent-tab" tabindex="0">
+                                rent
+                            </div>
+                            <div class="tab-pane fade" id="pills-filter-sold" role="tabpanel"
+                                aria-labelledby="pills-sold-tab" tabindex="0">
+                                sold
+                            </div>
                         </div>
                         <div class="modal-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-light py-12 px-3">Clear filters</button>
@@ -774,6 +782,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
             integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="/scripts/filter.js"></script>
 
 </body>
 
