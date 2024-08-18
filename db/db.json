@@ -1,1335 +1,1329 @@
 {
-    "search-suggestions": [
-        {
-            "id": "d2248a4a-570d-4283-867c-deb04f0be849",
-            "label": "Austria",
-            "value": "Austria"
-        },
-        {
-            "id": "9ff5ca2d-7921-419e-a680-b38e708dffd1",
-            "label": "Heard Island and McDonald Islands",
-            "value": "Heard Island and McDonald Islands"
-        },
-        {
-            "id": "12d2661b-9805-4f02-8a77-45fa4f809885",
-            "label": "North Macedonia",
-            "value": "North Macedonia"
-        },
-        {
-            "id": "bf0a2e7a-346e-4bb4-9e19-b882561a8173",
-            "label": "New Zealand",
-            "value": "New Zealand"
-        },
-        {
-            "id": "85d3727a-3767-4791-9f7c-7a7544a77478",
-            "label": "Georgia",
-            "value": "Georgia"
-        },
-        {
-            "id": "501a72fb-d040-4345-8c72-0be945a6d010",
-            "label": "Bosnia and Herzegovina",
-            "value": "Bosnia and Herzegovina"
-        },
-        {
-            "id": "e22af2a2-4688-4099-a6e7-155fa5034fbd",
-            "label": "India",
-            "value": "India"
-        },
-        {
-            "id": "a57d17ef-35f3-48d0-a8cb-e11bb2936ddf",
-            "label": "Rwanda",
-            "value": "Rwanda"
-        },
-        {
-            "id": "b2463a7c-78ad-4a38-bcbe-637665b066ac",
-            "label": "Turkmenistan",
-            "value": "Turkmenistan"
-        },
-        {
-            "id": "120f6cae-0c2a-4b12-9c48-4422cc567413",
-            "label": "Faroe Islands",
-            "value": "Faroe Islands"
-        },
-        {
-            "id": "22d2f26a-5865-4f36-9dab-f9cfe435e1d3",
-            "label": "Bosnia and Herzegovina",
-            "value": "Bosnia and Herzegovina"
-        },
-        {
-            "id": "dd2693f2-7324-43ce-91b2-49d3d48dc410",
-            "label": "Palestine",
-            "value": "Palestine"
-        },
-        {
-            "id": "2b314b64-c10c-4c3f-83b3-b6f73d39d9be",
-            "label": "Barbados",
-            "value": "Barbados"
-        },
-        {
-            "id": "188550e2-b790-4298-a9e6-4fbeb7223d46",
-            "label": "Mozambique",
-            "value": "Mozambique"
-        },
-        {
-            "id": "88016466-3856-4bd1-882b-2f26656b7b1c",
-            "label": "Iran",
-            "value": "Iran"
-        }
-    ],     
-    
-    
-      "search": [
-        {
-          "id": "fd39cc72-325c-4342-928a-d63c96f743f7",
-          "firstName": "Alejandra",
-          "lastName": "Franey",
-          "ownerAvatar": "https://picsum.photos/seed/Q3sDf/640/480",
-          "companyLogo": "https://picsum.photos/seed/2LGB0gZV/640/480",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/8xjmDu/640/480"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=4877020204892160"
-            }
-          ],
-          "price": {
-            "min": "176.00",
-            "max": "863.00"
-          },
-          "address": {
-            "street": "29268 Considine Mission",
-            "city": "Canton"
-          },
-          "services": {
-            "bed": 2,
-            "bath": 2,
-            "carPark": 1,
-            "area": 550
-          },
-          "type": "Acreage",
-          "inspectation": "1977-03-23T03:36:26.862Z",
-          "video": "true"
-        },
-        {
-          "id": "dd564b12-85dc-4cad-a8aa-c24dc8ffac66",
-          "firstName": "Makayla",
-          "lastName": "Sawayn",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=3117249128824832",
-          "companyLogo": "https://picsum.photos/seed/CsBUTw/640/480",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/NXoFcMhOx/640/480"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=6283731144802304"
-            }
-          ],
-          "price": {
-            "min": "404.00",
-            "max": "639.00"
-          },
-          "address": {
-            "street": "69217 Kohler Corners",
-            "city": "Jacynthestad"
-          },
-          "services": {
-            "bed": 2,
-            "bath": 3,
-            "carPark": 2,
-            "area": 855
-          },
-          "type": "House",
-          "inspectation": "1995-10-14T19:33:36.225Z",
-          "video": "false"
-        },
-        {
-          "id": "21b354a4-d12a-4364-9bd4-13ef0aedcccc",
-          "firstName": "Joshuah",
-          "lastName": "Wisozk",
-          "ownerAvatar": "https://picsum.photos/seed/IaAffSCc3c/640/480",
-          "companyLogo": "https://picsum.photos/seed/1QN8Hwmns/640/480",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/OPs0BH/640/480"
-            },
-            {
-              "url": "https://picsum.photos/seed/E7vUw5WXc6/640/480"
-            }
-          ],
-          "price": {
-            "min": "876.00",
-            "max": "73.00"
-          },
-          "address": {
-            "street": "45247 Oberbrunner Dale",
-            "city": "Marshallchester"
-          },
-          "services": {
-            "bed": 2,
-            "bath": 1,
-            "carPark": 3,
-            "area": 850
-          },
-          "type": "House",
-          "inspectation": "1970-09-28T10:49:00.216Z",
-          "video": "false"
-        },
-        {
-          "id": "bb8db5b5-f8cb-4641-b610-9ce3bc4a8195",
-          "firstName": "Ray",
-          "lastName": "Walsh",
-          "ownerAvatar": "https://picsum.photos/seed/IexEIC/640/480",
-          "companyLogo": "https://picsum.photos/seed/yXfnBQjcS/640/480",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=2040962387804160"
-            },
-            {
-              "url": "https://picsum.photos/seed/kPvhW4/640/480"
-            }
-          ],
-          "price": {
-            "min": "71.00",
-            "max": "57.00"
-          },
-          "address": {
-            "street": "555 Adaline Skyway",
-            "city": "Willburgh"
-          },
-          "services": {
-            "bed": 3,
-            "bath": 2,
-            "carPark": 2,
-            "area": 596
-          },
-          "type": "Land",
-          "inspectation": "1983-12-17T01:46:15.886Z",
-          "video": "true"
-        },
-        {
-          "id": "b2b89da4-d8aa-44d9-bd49-2393f3573839",
-          "firstName": "Lisandro",
-          "lastName": "Schmitt",
-          "ownerAvatar": "https://picsum.photos/seed/cz0l34lG/640/480",
-          "companyLogo": "https://picsum.photos/seed/lzKDlq/640/480",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/UBkFy/640/480"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=7893540371693568"
-            }
-          ],
-          "price": {
-            "min": "584.00",
-            "max": "612.00"
-          },
-          "address": {
-            "street": "586 Gerardo Cape",
-            "city": "East Ignacio"
-          },
-          "services": {
-            "bed": 2,
-            "bath": 1,
-            "carPark": 3,
-            "area": 890
-          },
-          "type": "Villa",
-          "inspectation": "1972-06-03T06:40:44.686Z",
-          "video": "false"
-        },
-        {
-          "id": "a27b6899-2a6a-4975-ab96-651352bbbd66",
-          "firstName": "Onie",
-          "lastName": "Powlowski",
-          "ownerAvatar": "https://picsum.photos/seed/YVHFrKQL/640/480",
-          "companyLogo": "https://loremflickr.com/640/480?lock=1103763821559808",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/KzQUQ/640/480"
-            },
-            {
-              "url": "https://picsum.photos/seed/3mEvhGLmI/640/480"
-            }
-          ],
-          "price": {
-            "min": "728.00",
-            "max": "979.00"
-          },
-          "address": {
-            "street": "3258 Hamill Pine",
-            "city": "Jakobshire"
-          },
-          "services": {
-            "bed": 1,
-            "bath": 1,
-            "carPark": 2,
-            "area": 580
-          },
-          "type": "Townhouse",
-          "inspectation": "2000-12-09T20:44:37.835Z",
-          "video": "false"
-        },
-        {
-          "id": "cd692157-dacd-4737-a4a5-600a4567df5b",
-          "firstName": "Alejandrin",
-          "lastName": "Beier",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=3287133477404672",
-          "companyLogo": "https://picsum.photos/seed/oUeAVlPPwu/640/480",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=3922777436323840"
-            },
-            {
-              "url": "https://picsum.photos/seed/oFKnspi6k/640/480"
-            }
-          ],
-          "price": {
-            "min": "302.00",
-            "max": "124.00"
-          },
-          "address": {
-            "street": "268 Fay Route",
-            "city": "Chicago"
-          },
-          "services": {
-            "bed": 3,
-            "bath": 1,
-            "carPark": 2,
-            "area": 979
-          },
-          "type": "Villa",
-          "inspectation": "1979-07-27T08:30:59.259Z",
-          "video": "true"
-        },
-        {
-          "id": "bf958529-0692-4283-897b-010512b481ef",
-          "firstName": "Estella",
-          "lastName": "Turcotte",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=304538368081920",
-          "companyLogo": "https://picsum.photos/seed/FSfqTr/640/480",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/JUdR4/640/480"
-            },
-            {
-              "url": "https://picsum.photos/seed/9sFDa/640/480"
-            }
-          ],
-          "price": {
-            "min": "15.00",
-            "max": "268.00"
-          },
-          "address": {
-            "street": "4211 O'Hara Village",
-            "city": "North Fannybury"
-          },
-          "services": {
-            "bed": 3,
-            "bath": 2,
-            "carPark": 2,
-            "area": 591
-          },
-          "type": "Land",
-          "inspectation": "1997-01-15T03:17:00.577Z",
-          "video": "true"
-        },
-        {
-          "id": "7aeeb784-767d-4d0b-b93d-6d1a73b9ffc9",
-          "firstName": "Lucie",
-          "lastName": "White",
-          "ownerAvatar": "https://picsum.photos/seed/u17Fe7l/640/480",
-          "companyLogo": "https://loremflickr.com/640/480?lock=8751297368948736",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=1040819056279552"
-            },
-            {
-              "url": "https://picsum.photos/seed/OaDstRAP/640/480"
-            }
-          ],
-          "price": {
-            "min": "131.00",
-            "max": "996.00"
-          },
-          "address": {
-            "street": "191 Vernice Route",
-            "city": "Dickensshire"
-          },
-          "services": {
-            "bed": 2,
-            "bath": 1,
-            "carPark": 1,
-            "area": 744
-          },
-          "type": "Land",
-          "inspectation": "1978-04-18T11:16:59.357Z",
-          "video": "false"
-        },
-        {
-          "id": "25bd6475-d608-4702-905b-a5b5b8e31851",
-          "firstName": "Maryam",
-          "lastName": "Hoeger",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=3179139672571904",
-          "companyLogo": "https://loremflickr.com/640/480?lock=936121070518272",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=7478154776018944"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=3630158198079488"
-            }
-          ],
-          "price": {
-            "min": "104.00",
-            "max": "681.00"
-          },
-          "address": {
-            "street": "25519 Swaniawski Via",
-            "city": "Fort Tamiamouth"
-          },
-          "services": {
-            "bed": 1,
-            "bath": 3,
-            "carPark": 3,
-            "area": 846
-          },
-          "type": "Townhouse",
-          "inspectation": "1975-09-04T20:19:23.487Z",
-          "video": "false"
-        },
-        {
-          "id": "dca34450-b228-4b79-8605-3059667a9bcf",
-          "firstName": "Mariah",
-          "lastName": "Schmeler-Stroman",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=80934839779328",
-          "companyLogo": "https://loremflickr.com/640/480?lock=7555206340411392",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=4815640263131136"
-            },
-            {
-              "url": "https://picsum.photos/seed/IbMnEjyY/640/480"
-            }
-          ],
-          "price": {
-            "min": "237.00",
-            "max": "1.00"
-          },
-          "address": {
-            "street": "4045 Ratke Track",
-            "city": "Aileenstad"
-          },
-          "services": {
-            "bed": 1,
-            "bath": 1,
-            "carPark": 2,
-            "area": 868
-          },
-          "type": "Apartment",
-          "inspectation": "1986-12-05T11:32:10.560Z",
-          "video": "true"
-        },
-        {
-          "id": "3c1ebccf-005b-4967-a2fa-9a5a0b40b6dd",
-          "firstName": "Omer",
-          "lastName": "Waelchi",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=7209604572250112",
-          "companyLogo": "https://loremflickr.com/640/480?lock=7278552433033216",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/3Aomw7W9O/640/480"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=2593497238470656"
-            }
-          ],
-          "price": {
-            "min": "468.00",
-            "max": "833.00"
-          },
-          "address": {
-            "street": "22700 Walsh Drive",
-            "city": "South Jenniferstead"
-          },
-          "services": {
-            "bed": 3,
-            "bath": 1,
-            "carPark": 1,
-            "area": 914
-          },
-          "type": "Acreage",
-          "inspectation": "1984-05-29T18:03:23.841Z",
-          "video": "true"
-        },
-        {
-          "id": "4b349ad6-7496-4bc9-a0d9-472086f51633",
-          "firstName": "Sydnee",
-          "lastName": "Hills",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=4667221687140352",
-          "companyLogo": "https://loremflickr.com/640/480?lock=1856434734104576",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=3272807488159744"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=4091642675986432"
-            }
-          ],
-          "price": {
-            "min": "893.00",
-            "max": "145.00"
-          },
-          "address": {
-            "street": "889 Virgil Rue",
-            "city": "Rautown"
-          },
-          "services": {
-            "bed": 1,
-            "bath": 2,
-            "carPark": 2,
-            "area": 501
-          },
-          "type": "Retirement Living",
-          "inspectation": "1985-05-29T20:37:06.680Z",
-          "video": "false"
-        },
-        {
-          "id": "6a180426-dd52-4056-a148-d9aad9d76190",
-          "firstName": "Frederick",
-          "lastName": "D'Amore",
-          "ownerAvatar": "https://picsum.photos/seed/vxuImQ/640/480",
-          "companyLogo": "https://loremflickr.com/640/480?lock=1239833538199552",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/LXMe86V8n3/640/480"
-            },
-            {
-              "url": "https://picsum.photos/seed/lpyG2i7c5/640/480"
-            }
-          ],
-          "price": {
-            "min": "332.00",
-            "max": "797.00"
-          },
-          "address": {
-            "street": "64737 King Ports",
-            "city": "Bartolettibury"
-          },
-          "services": {
-            "bed": 3,
-            "bath": 2,
-            "carPark": 1,
-            "area": 917
-          },
-          "type": "Land",
-          "inspectation": "1981-05-19T05:50:21.744Z",
-          "video": "true"
-        },
-        {
-          "id": "9c30053c-0d53-44df-b0ac-2196260e0d49",
-          "firstName": "Era",
-          "lastName": "Dicki",
-          "ownerAvatar": "https://picsum.photos/seed/MkIUw/640/480",
-          "companyLogo": "https://loremflickr.com/640/480?lock=6468204775866368",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/Mav8RZi/640/480"
-            },
-            {
-              "url": "https://picsum.photos/seed/jyaFi0/640/480"
-            }
-          ],
-          "price": {
-            "min": "781.00",
-            "max": "306.00"
-          },
-          "address": {
-            "street": "118 Will River",
-            "city": "Fort Ellenhaven"
-          },
-          "services": {
-            "bed": 1,
-            "bath": 2,
-            "carPark": 2,
-            "area": 410
-          },
-          "type": "Townhouse",
-          "inspectation": "1971-01-09T15:49:12.216Z",
-          "video": "false"
-        },
-        {
-          "id": "d7d90f33-0b4f-4bc1-a6e6-1f68ee27d2ae",
-          "firstName": "Antoinette",
-          "lastName": "Rolfson",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=5647993990545408",
-          "companyLogo": "https://picsum.photos/seed/TpmrAvPYy/640/480",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/au4nufaWU/640/480"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=6163094011117568"
-            }
-          ],
-          "price": {
-            "min": "443.00",
-            "max": "951.00"
-          },
-          "address": {
-            "street": "5224 Glennie Ranch",
-            "city": "Port Leatha"
-          },
-          "services": {
-            "bed": 3,
-            "bath": 3,
-            "carPark": 1,
-            "area": 461
-          },
-          "type": "Land",
-          "inspectation": "2022-10-05T19:47:10.254Z",
-          "video": "true"
-        },
-        {
-          "id": "51e48048-fe63-4caf-9046-9a0f8b187801",
-          "firstName": "Rory",
-          "lastName": "Walter",
-          "ownerAvatar": "https://picsum.photos/seed/G9xCeBwmjQ/640/480",
-          "companyLogo": "https://picsum.photos/seed/7PlFYLY/640/480",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=899684312809472"
-            },
-            {
-              "url": "https://picsum.photos/seed/oov0Ggu/640/480"
-            }
-          ],
-          "price": {
-            "min": "843.00",
-            "max": "916.00"
-          },
-          "address": {
-            "street": "225 Mozelle Course",
-            "city": "Albany"
-          },
-          "services": {
-            "bed": 2,
-            "bath": 3,
-            "carPark": 1,
-            "area": 425
-          },
-          "type": "House",
-          "inspectation": "1998-05-19T23:43:06.257Z",
-          "video": "false"
-        },
-        {
-          "id": "58a32445-64a9-46da-ae8a-56ce88cb5766",
-          "firstName": "Margarete",
-          "lastName": "Fahey",
-          "ownerAvatar": "https://picsum.photos/seed/vPwitPeV/640/480",
-          "companyLogo": "https://picsum.photos/seed/glC66ycC4/640/480",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=3872295202324480"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=881474685370368"
-            }
-          ],
-          "price": {
-            "min": "219.00",
-            "max": "31.00"
-          },
-          "address": {
-            "street": "52983 Lakin Orchard",
-            "city": "South Deborah"
-          },
-          "services": {
-            "bed": 3,
-            "bath": 2,
-            "carPark": 3,
-            "area": 586
-          },
-          "type": "Retirement Living",
-          "inspectation": "2010-08-17T20:15:44.708Z",
-          "video": "true"
-        },
-        {
-          "id": "7b613567-13ca-444e-bce2-fb57b2cb3c74",
-          "firstName": "Antonette",
-          "lastName": "Kshlerin",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=1632016002973696",
-          "companyLogo": "https://loremflickr.com/640/480?lock=1240700616179712",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/cNEL0FZKeu/640/480"
-            },
-            {
-              "url": "https://picsum.photos/seed/NL3gU/640/480"
-            }
-          ],
-          "price": {
-            "min": "556.00",
-            "max": "361.00"
-          },
-          "address": {
-            "street": "84158 Nina Gateway",
-            "city": "Lake Reginald"
-          },
-          "services": {
-            "bed": 1,
-            "bath": 1,
-            "carPark": 3,
-            "area": 811
-          },
-          "type": "House",
-          "inspectation": "1999-02-26T13:55:58.468Z",
-          "video": "false"
-        },
-        {
-          "id": "79d59bc3-f829-403b-8fb1-e0b3996d1e1c",
-          "firstName": "Rebecca",
-          "lastName": "Torphy",
-          "ownerAvatar": "https://picsum.photos/seed/tNfiFX/640/480",
-          "companyLogo": "https://loremflickr.com/640/480?lock=8873859923050496",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=3230141754900480"
-            },
-            {
-              "url": "https://picsum.photos/seed/KZytC/640/480"
-            }
-          ],
-          "price": {
-            "min": "667.00",
-            "max": "635.00"
-          },
-          "address": {
-            "street": "3488 Hildegard Branch",
-            "city": "West Maximilianport"
-          },
-          "services": {
-            "bed": 2,
-            "bath": 3,
-            "carPark": 3,
-            "area": 816
-          },
-          "type": "Townhouse",
-          "inspectation": "2015-03-07T13:24:04.919Z",
-          "video": "true"
-        },
-        {
-          "id": "8566e616-6807-46f6-9bd4-6f5c3a9826e7",
-          "firstName": "Donnell",
-          "lastName": "Pouros",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=1730418244059136",
-          "companyLogo": "https://picsum.photos/seed/TFl6fk/640/480",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/CnQSNF/640/480"
-            },
-            {
-              "url": "https://picsum.photos/seed/iqQIbYjQzn/640/480"
-            }
-          ],
-          "price": {
-            "min": "45.00",
-            "max": "57.00"
-          },
-          "address": {
-            "street": "67725 Pamela Greens",
-            "city": "Kylieside"
-          },
-          "services": {
-            "bed": 1,
-            "bath": 3,
-            "carPark": 1,
-            "area": 539
-          },
-          "type": "Retirement Living",
-          "inspectation": "1973-04-09T04:20:36.646Z",
-          "video": "true"
-        },
-        {
-          "id": "6329cc41-cc96-4007-ad07-74dc114f9a69",
-          "firstName": "Winnifred",
-          "lastName": "Weimann",
-          "ownerAvatar": "https://picsum.photos/seed/9O1jtk/640/480",
-          "companyLogo": "https://loremflickr.com/640/480?lock=8884147999211520",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=725644419792896"
-            },
-            {
-              "url": "https://picsum.photos/seed/9PuwT/640/480"
-            }
-          ],
-          "price": {
-            "min": "827.00",
-            "max": "659.00"
-          },
-          "address": {
-            "street": "6198 Casandra Mountain",
-            "city": "Casimerworth"
-          },
-          "services": {
-            "bed": 2,
-            "bath": 3,
-            "carPark": 2,
-            "area": 522
-          },
-          "type": "Acreage",
-          "inspectation": "1998-12-31T16:12:30.405Z",
-          "video": "false"
-        },
-        {
-          "id": "473a37d6-9338-4156-91cf-2c2842402d60",
-          "firstName": "Keira",
-          "lastName": "Rutherford",
-          "ownerAvatar": "https://picsum.photos/seed/2P6TCbBZJF/640/480",
-          "companyLogo": "https://loremflickr.com/640/480?lock=5018833368645632",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/vOug6UPy/640/480"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=3665666653552640"
-            }
-          ],
-          "price": {
-            "min": "233.00",
-            "max": "11.00"
-          },
-          "address": {
-            "street": "828 Halle Lane",
-            "city": "New Lexus"
-          },
-          "services": {
-            "bed": 1,
-            "bath": 2,
-            "carPark": 1,
-            "area": 682
-          },
-          "type": "Retirement Living",
-          "inspectation": "1997-10-21T06:21:37.402Z",
-          "video": "true"
-        },
-        {
-          "id": "538e2dec-0c5d-4e92-be20-02f0a17544f5",
-          "firstName": "Landen",
-          "lastName": "Cassin",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=6658599315046400",
-          "companyLogo": "https://loremflickr.com/640/480?lock=6024514947252224",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/MyoFyWv/640/480"
-            },
-            {
-              "url": "https://picsum.photos/seed/1LZuINAcV/640/480"
-            }
-          ],
-          "price": {
-            "min": "396.00",
-            "max": "481.00"
-          },
-          "address": {
-            "street": "5050 Weissnat Village",
-            "city": "Alexandreburgh"
-          },
-          "services": {
-            "bed": 1,
-            "bath": 3,
-            "carPark": 1,
-            "area": 1000
-          },
-          "type": "Acreage",
-          "inspectation": "1990-09-23T00:26:38.269Z",
-          "video": "true"
-        },
-        {
-          "id": "027f2090-9625-46bb-8788-912896a7d0eb",
-          "firstName": "Devin",
-          "lastName": "Kemmer",
-          "ownerAvatar": "https://picsum.photos/seed/AIpC8k7ni8/640/480",
-          "companyLogo": "https://loremflickr.com/640/480?lock=7092214714859520",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/7jeot/640/480"
-            },
-            {
-              "url": "https://picsum.photos/seed/XKD5se5X6h/640/480"
-            }
-          ],
-          "price": {
-            "min": "651.00",
-            "max": "433.00"
-          },
-          "address": {
-            "street": "6188 Hilll Bypass",
-            "city": "New Brunswick"
-          },
-          "services": {
-            "bed": 2,
-            "bath": 3,
-            "carPark": 3,
-            "area": 568
-          },
-          "type": "Acreage",
-          "inspectation": "2017-05-17T10:38:31.988Z",
-          "video": "true"
-        },
-        {
-          "id": "f1ceb434-b846-4892-a7c4-67d7e6f28b36",
-          "firstName": "Katherine",
-          "lastName": "Wintheiser",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=8596535531012096",
-          "companyLogo": "https://picsum.photos/seed/o9Jvo/640/480",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=4127930179387392"
-            },
-            {
-              "url": "https://picsum.photos/seed/m3XUBWvqeI/640/480"
-            }
-          ],
-          "price": {
-            "min": "27.00",
-            "max": "953.00"
-          },
-          "address": {
-            "street": "14841 Rutherford Views",
-            "city": "East Selmerside"
-          },
-          "services": {
-            "bed": 1,
-            "bath": 1,
-            "carPark": 3,
-            "area": 586
-          },
-          "type": "Townhouse",
-          "inspectation": "1990-04-12T07:45:02.426Z",
-          "video": "false"
-        },
-        {
-          "id": "3117cdef-ff9d-4b89-93c0-22ddcc7a001d",
-          "firstName": "Toni",
-          "lastName": "Von",
-          "ownerAvatar": "https://picsum.photos/seed/fKylzZYnJR/640/480",
-          "companyLogo": "https://picsum.photos/seed/dbo3Ly0J5/640/480",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=7395283413499904"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=4269973849505792"
-            }
-          ],
-          "price": {
-            "min": "912.00",
-            "max": "368.00"
-          },
-          "address": {
-            "street": "1030 Reta Run",
-            "city": "Lake Adolf"
-          },
-          "services": {
-            "bed": 2,
-            "bath": 1,
-            "carPark": 3,
-            "area": 498
-          },
-          "type": "Townhouse",
-          "inspectation": "1974-10-27T18:31:08.321Z",
-          "video": "true"
-        },
-        {
-          "id": "f4a47c6a-4fdd-4127-85d4-c7033a83df61",
-          "firstName": "Carrie",
-          "lastName": "Rutherford",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=5406712144068608",
-          "companyLogo": "https://picsum.photos/seed/zPWcwJlj/640/480",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/U60T9xZD/640/480"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=7091298272018432"
-            }
-          ],
-          "price": {
-            "min": "507.00",
-            "max": "703.00"
-          },
-          "address": {
-            "street": "10888 Humberto Common",
-            "city": "Nicolasland"
-          },
-          "services": {
-            "bed": 3,
-            "bath": 1,
-            "carPark": 1,
-            "area": 547
-          },
-          "type": "Acreage",
-          "inspectation": "1984-01-06T00:37:24.697Z",
-          "video": "false"
-        },
-        {
-          "id": "b92f857f-fa41-4c80-b663-8c1126459a96",
-          "firstName": "Cielo",
-          "lastName": "Wuckert",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=7073711874113536",
-          "companyLogo": "https://loremflickr.com/640/480?lock=4410968742297600",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/5LKzAG/640/480"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=7908908484001792"
-            }
-          ],
-          "price": {
-            "min": "390.00",
-            "max": "590.00"
-          },
-          "address": {
-            "street": "98344 Pagac Haven",
-            "city": "South Novellachester"
-          },
-          "services": {
-            "bed": 1,
-            "bath": 2,
-            "carPark": 2,
-            "area": 768
-          },
-          "type": "Acreage",
-          "inspectation": "2001-11-21T13:26:34.591Z",
-          "video": "true"
-        },
-        {
-          "id": "02d28335-a6cc-44ed-a3b6-22411e9b49bc",
-          "firstName": "Patricia",
-          "lastName": "Hauck",
-          "ownerAvatar": "https://picsum.photos/seed/p2v75Cd0M/640/480",
-          "companyLogo": "https://loremflickr.com/640/480?lock=5124480869335040",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=791314954190848"
-            },
-            {
-              "url": "https://picsum.photos/seed/2vf3QZkg3F/640/480"
-            }
-          ],
-          "price": {
-            "min": "788.00",
-            "max": "910.00"
-          },
-          "address": {
-            "street": "22587 Chaim Pass",
-            "city": "Rolfsonfort"
-          },
-          "services": {
-            "bed": 1,
-            "bath": 2,
-            "carPark": 2,
-            "area": 931
-          },
-          "type": "Villa",
-          "inspectation": "1982-02-06T09:29:50.991Z",
-          "video": "false"
-        },
-        {
-          "id": "47d27618-1cd0-475e-884b-cd91bb4d5016",
-          "firstName": "Derick",
-          "lastName": "Kemmer",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=794510965604352",
-          "companyLogo": "https://picsum.photos/seed/ESOEI/640/480",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=5116880144564224"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=8894494483152896"
-            }
-          ],
-          "price": {
-            "min": "595.00",
-            "max": "388.00"
-          },
-          "address": {
-            "street": "648 Davis Ports",
-            "city": "Fort Sydnieboro"
-          },
-          "services": {
-            "bed": 1,
-            "bath": 1,
-            "carPark": 3,
-            "area": 545
-          },
-          "type": "Retirement Living",
-          "inspectation": "1987-03-20T06:35:42.501Z",
-          "video": "false"
-        },
-        {
-          "id": "6730f8f3-6a4b-4871-b921-9591528bbc52",
-          "firstName": "Wilma",
-          "lastName": "Huel",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=6940873082273792",
-          "companyLogo": "https://loremflickr.com/640/480?lock=2657305317343232",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=1911009730101248"
-            },
-            {
-              "url": "https://picsum.photos/seed/6d9IxJE/640/480"
-            }
-          ],
-          "price": {
-            "min": "523.00",
-            "max": "334.00"
-          },
-          "address": {
-            "street": "555 Champlin Lodge",
-            "city": "Waelchistad"
-          },
-          "services": {
-            "bed": 3,
-            "bath": 3,
-            "carPark": 2,
-            "area": 700
-          },
-          "type": "Villa",
-          "inspectation": "2012-04-24T13:13:28.537Z",
-          "video": "false"
-        },
-        {
-          "id": "3a456025-f77a-4cf6-a994-06cdc64edde2",
-          "firstName": "Gaston",
-          "lastName": "Kuhlman",
-          "ownerAvatar": "https://picsum.photos/seed/jPVcc7Gql4/640/480",
-          "companyLogo": "https://picsum.photos/seed/EHDq1ZTO5/640/480",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=4326678568370176"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=5841472888766464"
-            }
-          ],
-          "price": {
-            "min": "955.00",
-            "max": "599.00"
-          },
-          "address": {
-            "street": "1126 Aimee Underpass",
-            "city": "Cassinview"
-          },
-          "services": {
-            "bed": 2,
-            "bath": 1,
-            "carPark": 3,
-            "area": 632
-          },
-          "type": "House",
-          "inspectation": "1980-06-07T12:11:42.700Z",
-          "video": "false"
-        },
-        {
-          "id": "27c37839-4b71-4c11-ba3b-6e44c0646855",
-          "firstName": "Jacey",
-          "lastName": "Hoppe",
-          "ownerAvatar": "https://picsum.photos/seed/szEsKg2/640/480",
-          "companyLogo": "https://loremflickr.com/640/480?lock=4106557098819584",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=43253669822464"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=5966782259003392"
-            }
-          ],
-          "price": {
-            "min": "149.00",
-            "max": "825.00"
-          },
-          "address": {
-            "street": "3121 Audra Spurs",
-            "city": "Guiseppefurt"
-          },
-          "services": {
-            "bed": 3,
-            "bath": 3,
-            "carPark": 3,
-            "area": 822
-          },
-          "type": "Villa",
-          "inspectation": "1986-08-28T20:49:55.868Z",
-          "video": "false"
-        },
-        {
-          "id": "0d4a2358-3b50-460e-a209-b7b3c8b7a1fb",
-          "firstName": "Dakota",
-          "lastName": "McGlynn",
-          "ownerAvatar": "https://picsum.photos/seed/YaSe5U/640/480",
-          "companyLogo": "https://picsum.photos/seed/GSWeAjDD/640/480",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=6308005823905792"
-            },
-            {
-              "url": "https://picsum.photos/seed/5iKUN1o39/640/480"
-            }
-          ],
-          "price": {
-            "min": "693.00",
-            "max": "299.00"
-          },
-          "address": {
-            "street": "690 Jaron Fords",
-            "city": "Hoppechester"
-          },
-          "services": {
-            "bed": 1,
-            "bath": 1,
-            "carPark": 2,
-            "area": 639
-          },
-          "type": "Villa",
-          "inspectation": "2011-11-14T06:46:41.908Z",
-          "video": "false"
-        },
-        {
-          "id": "ec04a55b-2556-43e1-80a5-260ad22345f2",
-          "firstName": "Otho",
-          "lastName": "Stracke",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=4090436436099072",
-          "companyLogo": "https://picsum.photos/seed/YGIwb/640/480",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/OUbHKA/640/480"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=5530213056249856"
-            }
-          ],
-          "price": {
-            "min": "313.00",
-            "max": "925.00"
-          },
-          "address": {
-            "street": "5000 Amara Extension",
-            "city": "East Noelbury"
-          },
-          "services": {
-            "bed": 2,
-            "bath": 2,
-            "carPark": 1,
-            "area": 808
-          },
-          "type": "Apartment",
-          "inspectation": "2018-06-06T07:59:44.980Z",
-          "video": "false"
-        },
-        {
-          "id": "11afa29a-2020-41ef-bfe2-5c8ce42fce21",
-          "firstName": "Marilie",
-          "lastName": "Heidenreich",
-          "ownerAvatar": "https://picsum.photos/seed/ALvIssp3Vt/640/480",
-          "companyLogo": "https://picsum.photos/seed/Vyivkv/640/480",
-          "images": [
-            {
-              "url": "https://loremflickr.com/640/480?lock=8817326224834560"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=605713946640384"
-            }
-          ],
-          "price": {
-            "min": "945.00",
-            "max": "555.00"
-          },
-          "address": {
-            "street": "39593 Zena Square",
-            "city": "East Junius"
-          },
-          "services": {
-            "bed": 1,
-            "bath": 3,
-            "carPark": 2,
-            "area": 515
-          },
-          "type": "Retirement Living",
-          "inspectation": "1983-06-03T23:08:23.872Z",
-          "video": "false"
-        },
-        {
-          "id": "dc9fef89-ec0a-4407-af64-771fb86f9cf0",
-          "firstName": "Kristofer",
-          "lastName": "Leuschke",
-          "ownerAvatar": "https://loremflickr.com/640/480?lock=7116414053777408",
-          "companyLogo": "https://loremflickr.com/640/480?lock=4978626357362688",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/wZ0BSX/640/480"
-            },
-            {
-              "url": "https://picsum.photos/seed/xsRVfT46/640/480"
-            }
-          ],
-          "price": {
-            "min": "973.00",
-            "max": "318.00"
-          },
-          "address": {
-            "street": "9215 Murphy Land",
-            "city": "Riverside"
-          },
-          "services": {
-            "bed": 2,
-            "bath": 2,
-            "carPark": 3,
-            "area": 900
-          },
-          "type": "Villa",
-          "inspectation": "1988-02-15T08:56:46.940Z",
-          "video": "true"
-        },
-        {
-          "id": "50d735fc-4901-4937-b389-86574a43e361",
-          "firstName": "Alexzander",
-          "lastName": "Cummerata",
-          "ownerAvatar": "https://picsum.photos/seed/q988UcNuCV/640/480",
-          "companyLogo": "https://loremflickr.com/640/480?lock=2233673820667904",
-          "images": [
-            {
-              "url": "https://picsum.photos/seed/pjJgwDsBts/640/480"
-            },
-            {
-              "url": "https://loremflickr.com/640/480?lock=1154428360982528"
-            }
-          ],
-          "price": {
-            "min": "310.00",
-            "max": "125.00"
-          },
-          "address": {
-            "street": "2871 Kihn Gardens",
-            "city": "Floydview"
-          },
-          "services": {
-            "bed": 2,
-            "bath": 3,
-            "carPark": 2,
-            "area": 513
-          },
-          "type": "House",
-          "inspectation": "2008-05-14T07:22:08.541Z",
-          "video": "false"
-        }
-      ]
+  "search-suggestions": [
+    {
+      "id": "d2248a4a-570d-4283-867c-deb04f0be849",
+      "label": "Austria",
+      "value": "Austria"
+    },
+    {
+      "id": "9ff5ca2d-7921-419e-a680-b38e708dffd1",
+      "label": "Heard Island and McDonald Islands",
+      "value": "Heard Island and McDonald Islands"
+    },
+    {
+      "id": "12d2661b-9805-4f02-8a77-45fa4f809885",
+      "label": "North Macedonia",
+      "value": "North Macedonia"
+    },
+    {
+      "id": "bf0a2e7a-346e-4bb4-9e19-b882561a8173",
+      "label": "New Zealand",
+      "value": "New Zealand"
+    },
+    {
+      "id": "85d3727a-3767-4791-9f7c-7a7544a77478",
+      "label": "Georgia",
+      "value": "Georgia"
+    },
+    {
+      "id": "501a72fb-d040-4345-8c72-0be945a6d010",
+      "label": "Bosnia and Herzegovina",
+      "value": "Bosnia and Herzegovina"
+    },
+    {
+      "id": "e22af2a2-4688-4099-a6e7-155fa5034fbd",
+      "label": "India",
+      "value": "India"
+    },
+    {
+      "id": "a57d17ef-35f3-48d0-a8cb-e11bb2936ddf",
+      "label": "Rwanda",
+      "value": "Rwanda"
+    },
+    {
+      "id": "b2463a7c-78ad-4a38-bcbe-637665b066ac",
+      "label": "Turkmenistan",
+      "value": "Turkmenistan"
+    },
+    {
+      "id": "120f6cae-0c2a-4b12-9c48-4422cc567413",
+      "label": "Faroe Islands",
+      "value": "Faroe Islands"
+    },
+    {
+      "id": "22d2f26a-5865-4f36-9dab-f9cfe435e1d3",
+      "label": "Bosnia and Herzegovina",
+      "value": "Bosnia and Herzegovina"
+    },
+    {
+      "id": "dd2693f2-7324-43ce-91b2-49d3d48dc410",
+      "label": "Palestine",
+      "value": "Palestine"
+    },
+    {
+      "id": "2b314b64-c10c-4c3f-83b3-b6f73d39d9be",
+      "label": "Barbados",
+      "value": "Barbados"
+    },
+    {
+      "id": "188550e2-b790-4298-a9e6-4fbeb7223d46",
+      "label": "Mozambique",
+      "value": "Mozambique"
+    },
+    {
+      "id": "88016466-3856-4bd1-882b-2f26656b7b1c",
+      "label": "Iran",
+      "value": "Iran"
     }
-    
-    
-    
-          
+  ],
+  "search": [
+    {
+      "id": "fd39cc72-325c-4342-928a-d63c96f743f7",
+      "firstName": "Alejandra",
+      "lastName": "Franey",
+      "ownerAvatar": "https://picsum.photos/seed/Q3sDf/640/480",
+      "companyLogo": "https://picsum.photos/seed/2LGB0gZV/640/480",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/8xjmDu/640/480"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=4877020204892160"
+        }
+      ],
+      "price": {
+        "min": "176.00",
+        "max": "863.00"
+      },
+      "address": {
+        "street": "29268 Considine Mission",
+        "city": "Canton"
+      },
+      "services": {
+        "bed": 2,
+        "bath": 2,
+        "carPark": 1,
+        "area": 550
+      },
+      "type": "Acreage",
+      "inspectation": "1977-03-23T03:36:26.862Z",
+      "video": "true"
+    },
+    {
+      "id": "dd564b12-85dc-4cad-a8aa-c24dc8ffac66",
+      "firstName": "Makayla",
+      "lastName": "Sawayn",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=3117249128824832",
+      "companyLogo": "https://picsum.photos/seed/CsBUTw/640/480",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/NXoFcMhOx/640/480"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=6283731144802304"
+        }
+      ],
+      "price": {
+        "min": "404.00",
+        "max": "639.00"
+      },
+      "address": {
+        "street": "69217 Kohler Corners",
+        "city": "Jacynthestad"
+      },
+      "services": {
+        "bed": 2,
+        "bath": 3,
+        "carPark": 2,
+        "area": 855
+      },
+      "type": "House",
+      "inspectation": "1995-10-14T19:33:36.225Z",
+      "video": "false"
+    },
+    {
+      "id": "21b354a4-d12a-4364-9bd4-13ef0aedcccc",
+      "firstName": "Joshuah",
+      "lastName": "Wisozk",
+      "ownerAvatar": "https://picsum.photos/seed/IaAffSCc3c/640/480",
+      "companyLogo": "https://picsum.photos/seed/1QN8Hwmns/640/480",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/OPs0BH/640/480"
+        },
+        {
+          "url": "https://picsum.photos/seed/E7vUw5WXc6/640/480"
+        }
+      ],
+      "price": {
+        "min": "876.00",
+        "max": "73.00"
+      },
+      "address": {
+        "street": "45247 Oberbrunner Dale",
+        "city": "Marshallchester"
+      },
+      "services": {
+        "bed": 2,
+        "bath": 1,
+        "carPark": 3,
+        "area": 850
+      },
+      "type": "House",
+      "inspectation": "1970-09-28T10:49:00.216Z",
+      "video": "false"
+    },
+    {
+      "id": "bb8db5b5-f8cb-4641-b610-9ce3bc4a8195",
+      "firstName": "Ray",
+      "lastName": "Walsh",
+      "ownerAvatar": "https://picsum.photos/seed/IexEIC/640/480",
+      "companyLogo": "https://picsum.photos/seed/yXfnBQjcS/640/480",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=2040962387804160"
+        },
+        {
+          "url": "https://picsum.photos/seed/kPvhW4/640/480"
+        }
+      ],
+      "price": {
+        "min": "71.00",
+        "max": "57.00"
+      },
+      "address": {
+        "street": "555 Adaline Skyway",
+        "city": "Willburgh"
+      },
+      "services": {
+        "bed": 3,
+        "bath": 2,
+        "carPark": 2,
+        "area": 596
+      },
+      "type": "Land",
+      "inspectation": "1983-12-17T01:46:15.886Z",
+      "video": "true"
+    },
+    {
+      "id": "b2b89da4-d8aa-44d9-bd49-2393f3573839",
+      "firstName": "Lisandro",
+      "lastName": "Schmitt",
+      "ownerAvatar": "https://picsum.photos/seed/cz0l34lG/640/480",
+      "companyLogo": "https://picsum.photos/seed/lzKDlq/640/480",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/UBkFy/640/480"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=7893540371693568"
+        }
+      ],
+      "price": {
+        "min": "584.00",
+        "max": "612.00"
+      },
+      "address": {
+        "street": "586 Gerardo Cape",
+        "city": "East Ignacio"
+      },
+      "services": {
+        "bed": 2,
+        "bath": 1,
+        "carPark": 3,
+        "area": 890
+      },
+      "type": "Villa",
+      "inspectation": "1972-06-03T06:40:44.686Z",
+      "video": "false"
+    },
+    {
+      "id": "a27b6899-2a6a-4975-ab96-651352bbbd66",
+      "firstName": "Onie",
+      "lastName": "Powlowski",
+      "ownerAvatar": "https://picsum.photos/seed/YVHFrKQL/640/480",
+      "companyLogo": "https://loremflickr.com/640/480?lock=1103763821559808",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/KzQUQ/640/480"
+        },
+        {
+          "url": "https://picsum.photos/seed/3mEvhGLmI/640/480"
+        }
+      ],
+      "price": {
+        "min": "728.00",
+        "max": "979.00"
+      },
+      "address": {
+        "street": "3258 Hamill Pine",
+        "city": "Jakobshire"
+      },
+      "services": {
+        "bed": 1,
+        "bath": 1,
+        "carPark": 2,
+        "area": 580
+      },
+      "type": "Townhouse",
+      "inspectation": "2000-12-09T20:44:37.835Z",
+      "video": "false"
+    },
+    {
+      "id": "cd692157-dacd-4737-a4a5-600a4567df5b",
+      "firstName": "Alejandrin",
+      "lastName": "Beier",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=3287133477404672",
+      "companyLogo": "https://picsum.photos/seed/oUeAVlPPwu/640/480",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=3922777436323840"
+        },
+        {
+          "url": "https://picsum.photos/seed/oFKnspi6k/640/480"
+        }
+      ],
+      "price": {
+        "min": "302.00",
+        "max": "124.00"
+      },
+      "address": {
+        "street": "268 Fay Route",
+        "city": "Chicago"
+      },
+      "services": {
+        "bed": 3,
+        "bath": 1,
+        "carPark": 2,
+        "area": 979
+      },
+      "type": "Villa",
+      "inspectation": "1979-07-27T08:30:59.259Z",
+      "video": "true"
+    },
+    {
+      "id": "bf958529-0692-4283-897b-010512b481ef",
+      "firstName": "Estella",
+      "lastName": "Turcotte",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=304538368081920",
+      "companyLogo": "https://picsum.photos/seed/FSfqTr/640/480",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/JUdR4/640/480"
+        },
+        {
+          "url": "https://picsum.photos/seed/9sFDa/640/480"
+        }
+      ],
+      "price": {
+        "min": "15.00",
+        "max": "268.00"
+      },
+      "address": {
+        "street": "4211 O'Hara Village",
+        "city": "North Fannybury"
+      },
+      "services": {
+        "bed": 3,
+        "bath": 2,
+        "carPark": 2,
+        "area": 591
+      },
+      "type": "Land",
+      "inspectation": "1997-01-15T03:17:00.577Z",
+      "video": "true"
+    },
+    {
+      "id": "7aeeb784-767d-4d0b-b93d-6d1a73b9ffc9",
+      "firstName": "Lucie",
+      "lastName": "White",
+      "ownerAvatar": "https://picsum.photos/seed/u17Fe7l/640/480",
+      "companyLogo": "https://loremflickr.com/640/480?lock=8751297368948736",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=1040819056279552"
+        },
+        {
+          "url": "https://picsum.photos/seed/OaDstRAP/640/480"
+        }
+      ],
+      "price": {
+        "min": "131.00",
+        "max": "996.00"
+      },
+      "address": {
+        "street": "191 Vernice Route",
+        "city": "Dickensshire"
+      },
+      "services": {
+        "bed": 2,
+        "bath": 1,
+        "carPark": 1,
+        "area": 744
+      },
+      "type": "Land",
+      "inspectation": "1978-04-18T11:16:59.357Z",
+      "video": "false"
+    },
+    {
+      "id": "25bd6475-d608-4702-905b-a5b5b8e31851",
+      "firstName": "Maryam",
+      "lastName": "Hoeger",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=3179139672571904",
+      "companyLogo": "https://loremflickr.com/640/480?lock=936121070518272",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=7478154776018944"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=3630158198079488"
+        }
+      ],
+      "price": {
+        "min": "104.00",
+        "max": "681.00"
+      },
+      "address": {
+        "street": "25519 Swaniawski Via",
+        "city": "Fort Tamiamouth"
+      },
+      "services": {
+        "bed": 1,
+        "bath": 3,
+        "carPark": 3,
+        "area": 846
+      },
+      "type": "Townhouse",
+      "inspectation": "1975-09-04T20:19:23.487Z",
+      "video": "false"
+    },
+    {
+      "id": "dca34450-b228-4b79-8605-3059667a9bcf",
+      "firstName": "Mariah",
+      "lastName": "Schmeler-Stroman",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=80934839779328",
+      "companyLogo": "https://loremflickr.com/640/480?lock=7555206340411392",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=4815640263131136"
+        },
+        {
+          "url": "https://picsum.photos/seed/IbMnEjyY/640/480"
+        }
+      ],
+      "price": {
+        "min": "237.00",
+        "max": "1.00"
+      },
+      "address": {
+        "street": "4045 Ratke Track",
+        "city": "Aileenstad"
+      },
+      "services": {
+        "bed": 1,
+        "bath": 1,
+        "carPark": 2,
+        "area": 868
+      },
+      "type": "Apartment",
+      "inspectation": "1986-12-05T11:32:10.560Z",
+      "video": "true"
+    },
+    {
+      "id": "3c1ebccf-005b-4967-a2fa-9a5a0b40b6dd",
+      "firstName": "Omer",
+      "lastName": "Waelchi",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=7209604572250112",
+      "companyLogo": "https://loremflickr.com/640/480?lock=7278552433033216",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/3Aomw7W9O/640/480"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=2593497238470656"
+        }
+      ],
+      "price": {
+        "min": "468.00",
+        "max": "833.00"
+      },
+      "address": {
+        "street": "22700 Walsh Drive",
+        "city": "South Jenniferstead"
+      },
+      "services": {
+        "bed": 3,
+        "bath": 1,
+        "carPark": 1,
+        "area": 914
+      },
+      "type": "Acreage",
+      "inspectation": "1984-05-29T18:03:23.841Z",
+      "video": "true"
+    },
+    {
+      "id": "4b349ad6-7496-4bc9-a0d9-472086f51633",
+      "firstName": "Sydnee",
+      "lastName": "Hills",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=4667221687140352",
+      "companyLogo": "https://loremflickr.com/640/480?lock=1856434734104576",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=3272807488159744"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=4091642675986432"
+        }
+      ],
+      "price": {
+        "min": "893.00",
+        "max": "145.00"
+      },
+      "address": {
+        "street": "889 Virgil Rue",
+        "city": "Rautown"
+      },
+      "services": {
+        "bed": 1,
+        "bath": 2,
+        "carPark": 2,
+        "area": 501
+      },
+      "type": "Retirement Living",
+      "inspectation": "1985-05-29T20:37:06.680Z",
+      "video": "false"
+    },
+    {
+      "id": "6a180426-dd52-4056-a148-d9aad9d76190",
+      "firstName": "Frederick",
+      "lastName": "D'Amore",
+      "ownerAvatar": "https://picsum.photos/seed/vxuImQ/640/480",
+      "companyLogo": "https://loremflickr.com/640/480?lock=1239833538199552",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/LXMe86V8n3/640/480"
+        },
+        {
+          "url": "https://picsum.photos/seed/lpyG2i7c5/640/480"
+        }
+      ],
+      "price": {
+        "min": "332.00",
+        "max": "797.00"
+      },
+      "address": {
+        "street": "64737 King Ports",
+        "city": "Bartolettibury"
+      },
+      "services": {
+        "bed": 3,
+        "bath": 2,
+        "carPark": 1,
+        "area": 917
+      },
+      "type": "Land",
+      "inspectation": "1981-05-19T05:50:21.744Z",
+      "video": "true"
+    },
+    {
+      "id": "9c30053c-0d53-44df-b0ac-2196260e0d49",
+      "firstName": "Era",
+      "lastName": "Dicki",
+      "ownerAvatar": "https://picsum.photos/seed/MkIUw/640/480",
+      "companyLogo": "https://loremflickr.com/640/480?lock=6468204775866368",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/Mav8RZi/640/480"
+        },
+        {
+          "url": "https://picsum.photos/seed/jyaFi0/640/480"
+        }
+      ],
+      "price": {
+        "min": "781.00",
+        "max": "306.00"
+      },
+      "address": {
+        "street": "118 Will River",
+        "city": "Fort Ellenhaven"
+      },
+      "services": {
+        "bed": 1,
+        "bath": 2,
+        "carPark": 2,
+        "area": 410
+      },
+      "type": "Townhouse",
+      "inspectation": "1971-01-09T15:49:12.216Z",
+      "video": "false"
+    },
+    {
+      "id": "d7d90f33-0b4f-4bc1-a6e6-1f68ee27d2ae",
+      "firstName": "Antoinette",
+      "lastName": "Rolfson",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=5647993990545408",
+      "companyLogo": "https://picsum.photos/seed/TpmrAvPYy/640/480",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/au4nufaWU/640/480"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=6163094011117568"
+        }
+      ],
+      "price": {
+        "min": "443.00",
+        "max": "951.00"
+      },
+      "address": {
+        "street": "5224 Glennie Ranch",
+        "city": "Port Leatha"
+      },
+      "services": {
+        "bed": 3,
+        "bath": 3,
+        "carPark": 1,
+        "area": 461
+      },
+      "type": "Land",
+      "inspectation": "2022-10-05T19:47:10.254Z",
+      "video": "true"
+    },
+    {
+      "id": "51e48048-fe63-4caf-9046-9a0f8b187801",
+      "firstName": "Rory",
+      "lastName": "Walter",
+      "ownerAvatar": "https://picsum.photos/seed/G9xCeBwmjQ/640/480",
+      "companyLogo": "https://picsum.photos/seed/7PlFYLY/640/480",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=899684312809472"
+        },
+        {
+          "url": "https://picsum.photos/seed/oov0Ggu/640/480"
+        }
+      ],
+      "price": {
+        "min": "843.00",
+        "max": "916.00"
+      },
+      "address": {
+        "street": "225 Mozelle Course",
+        "city": "Albany"
+      },
+      "services": {
+        "bed": 2,
+        "bath": 3,
+        "carPark": 1,
+        "area": 425
+      },
+      "type": "House",
+      "inspectation": "1998-05-19T23:43:06.257Z",
+      "video": "false"
+    },
+    {
+      "id": "58a32445-64a9-46da-ae8a-56ce88cb5766",
+      "firstName": "Margarete",
+      "lastName": "Fahey",
+      "ownerAvatar": "https://picsum.photos/seed/vPwitPeV/640/480",
+      "companyLogo": "https://picsum.photos/seed/glC66ycC4/640/480",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=3872295202324480"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=881474685370368"
+        }
+      ],
+      "price": {
+        "min": "219.00",
+        "max": "31.00"
+      },
+      "address": {
+        "street": "52983 Lakin Orchard",
+        "city": "South Deborah"
+      },
+      "services": {
+        "bed": 3,
+        "bath": 2,
+        "carPark": 3,
+        "area": 586
+      },
+      "type": "Retirement Living",
+      "inspectation": "2010-08-17T20:15:44.708Z",
+      "video": "true"
+    },
+    {
+      "id": "7b613567-13ca-444e-bce2-fb57b2cb3c74",
+      "firstName": "Antonette",
+      "lastName": "Kshlerin",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=1632016002973696",
+      "companyLogo": "https://loremflickr.com/640/480?lock=1240700616179712",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/cNEL0FZKeu/640/480"
+        },
+        {
+          "url": "https://picsum.photos/seed/NL3gU/640/480"
+        }
+      ],
+      "price": {
+        "min": "556.00",
+        "max": "361.00"
+      },
+      "address": {
+        "street": "84158 Nina Gateway",
+        "city": "Lake Reginald"
+      },
+      "services": {
+        "bed": 1,
+        "bath": 1,
+        "carPark": 3,
+        "area": 811
+      },
+      "type": "House",
+      "inspectation": "1999-02-26T13:55:58.468Z",
+      "video": "false"
+    },
+    {
+      "id": "79d59bc3-f829-403b-8fb1-e0b3996d1e1c",
+      "firstName": "Rebecca",
+      "lastName": "Torphy",
+      "ownerAvatar": "https://picsum.photos/seed/tNfiFX/640/480",
+      "companyLogo": "https://loremflickr.com/640/480?lock=8873859923050496",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=3230141754900480"
+        },
+        {
+          "url": "https://picsum.photos/seed/KZytC/640/480"
+        }
+      ],
+      "price": {
+        "min": "667.00",
+        "max": "635.00"
+      },
+      "address": {
+        "street": "3488 Hildegard Branch",
+        "city": "West Maximilianport"
+      },
+      "services": {
+        "bed": 2,
+        "bath": 3,
+        "carPark": 3,
+        "area": 816
+      },
+      "type": "Townhouse",
+      "inspectation": "2015-03-07T13:24:04.919Z",
+      "video": "true"
+    },
+    {
+      "id": "8566e616-6807-46f6-9bd4-6f5c3a9826e7",
+      "firstName": "Donnell",
+      "lastName": "Pouros",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=1730418244059136",
+      "companyLogo": "https://picsum.photos/seed/TFl6fk/640/480",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/CnQSNF/640/480"
+        },
+        {
+          "url": "https://picsum.photos/seed/iqQIbYjQzn/640/480"
+        }
+      ],
+      "price": {
+        "min": "45.00",
+        "max": "57.00"
+      },
+      "address": {
+        "street": "67725 Pamela Greens",
+        "city": "Kylieside"
+      },
+      "services": {
+        "bed": 1,
+        "bath": 3,
+        "carPark": 1,
+        "area": 539
+      },
+      "type": "Retirement Living",
+      "inspectation": "1973-04-09T04:20:36.646Z",
+      "video": "true"
+    },
+    {
+      "id": "6329cc41-cc96-4007-ad07-74dc114f9a69",
+      "firstName": "Winnifred",
+      "lastName": "Weimann",
+      "ownerAvatar": "https://picsum.photos/seed/9O1jtk/640/480",
+      "companyLogo": "https://loremflickr.com/640/480?lock=8884147999211520",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=725644419792896"
+        },
+        {
+          "url": "https://picsum.photos/seed/9PuwT/640/480"
+        }
+      ],
+      "price": {
+        "min": "827.00",
+        "max": "659.00"
+      },
+      "address": {
+        "street": "6198 Casandra Mountain",
+        "city": "Casimerworth"
+      },
+      "services": {
+        "bed": 2,
+        "bath": 3,
+        "carPark": 2,
+        "area": 522
+      },
+      "type": "Acreage",
+      "inspectation": "1998-12-31T16:12:30.405Z",
+      "video": "false"
+    },
+    {
+      "id": "473a37d6-9338-4156-91cf-2c2842402d60",
+      "firstName": "Keira",
+      "lastName": "Rutherford",
+      "ownerAvatar": "https://picsum.photos/seed/2P6TCbBZJF/640/480",
+      "companyLogo": "https://loremflickr.com/640/480?lock=5018833368645632",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/vOug6UPy/640/480"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=3665666653552640"
+        }
+      ],
+      "price": {
+        "min": "233.00",
+        "max": "11.00"
+      },
+      "address": {
+        "street": "828 Halle Lane",
+        "city": "New Lexus"
+      },
+      "services": {
+        "bed": 1,
+        "bath": 2,
+        "carPark": 1,
+        "area": 682
+      },
+      "type": "Retirement Living",
+      "inspectation": "1997-10-21T06:21:37.402Z",
+      "video": "true"
+    },
+    {
+      "id": "538e2dec-0c5d-4e92-be20-02f0a17544f5",
+      "firstName": "Landen",
+      "lastName": "Cassin",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=6658599315046400",
+      "companyLogo": "https://loremflickr.com/640/480?lock=6024514947252224",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/MyoFyWv/640/480"
+        },
+        {
+          "url": "https://picsum.photos/seed/1LZuINAcV/640/480"
+        }
+      ],
+      "price": {
+        "min": "396.00",
+        "max": "481.00"
+      },
+      "address": {
+        "street": "5050 Weissnat Village",
+        "city": "Alexandreburgh"
+      },
+      "services": {
+        "bed": 1,
+        "bath": 3,
+        "carPark": 1,
+        "area": 1000
+      },
+      "type": "Acreage",
+      "inspectation": "1990-09-23T00:26:38.269Z",
+      "video": "true"
+    },
+    {
+      "id": "027f2090-9625-46bb-8788-912896a7d0eb",
+      "firstName": "Devin",
+      "lastName": "Kemmer",
+      "ownerAvatar": "https://picsum.photos/seed/AIpC8k7ni8/640/480",
+      "companyLogo": "https://loremflickr.com/640/480?lock=7092214714859520",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/7jeot/640/480"
+        },
+        {
+          "url": "https://picsum.photos/seed/XKD5se5X6h/640/480"
+        }
+      ],
+      "price": {
+        "min": "651.00",
+        "max": "433.00"
+      },
+      "address": {
+        "street": "6188 Hilll Bypass",
+        "city": "New Brunswick"
+      },
+      "services": {
+        "bed": 2,
+        "bath": 3,
+        "carPark": 3,
+        "area": 568
+      },
+      "type": "Acreage",
+      "inspectation": "2017-05-17T10:38:31.988Z",
+      "video": "true"
+    },
+    {
+      "id": "f1ceb434-b846-4892-a7c4-67d7e6f28b36",
+      "firstName": "Katherine",
+      "lastName": "Wintheiser",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=8596535531012096",
+      "companyLogo": "https://picsum.photos/seed/o9Jvo/640/480",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=4127930179387392"
+        },
+        {
+          "url": "https://picsum.photos/seed/m3XUBWvqeI/640/480"
+        }
+      ],
+      "price": {
+        "min": "27.00",
+        "max": "953.00"
+      },
+      "address": {
+        "street": "14841 Rutherford Views",
+        "city": "East Selmerside"
+      },
+      "services": {
+        "bed": 1,
+        "bath": 1,
+        "carPark": 3,
+        "area": 586
+      },
+      "type": "Townhouse",
+      "inspectation": "1990-04-12T07:45:02.426Z",
+      "video": "false"
+    },
+    {
+      "id": "3117cdef-ff9d-4b89-93c0-22ddcc7a001d",
+      "firstName": "Toni",
+      "lastName": "Von",
+      "ownerAvatar": "https://picsum.photos/seed/fKylzZYnJR/640/480",
+      "companyLogo": "https://picsum.photos/seed/dbo3Ly0J5/640/480",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=7395283413499904"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=4269973849505792"
+        }
+      ],
+      "price": {
+        "min": "912.00",
+        "max": "368.00"
+      },
+      "address": {
+        "street": "1030 Reta Run",
+        "city": "Lake Adolf"
+      },
+      "services": {
+        "bed": 2,
+        "bath": 1,
+        "carPark": 3,
+        "area": 498
+      },
+      "type": "Townhouse",
+      "inspectation": "1974-10-27T18:31:08.321Z",
+      "video": "true"
+    },
+    {
+      "id": "f4a47c6a-4fdd-4127-85d4-c7033a83df61",
+      "firstName": "Carrie",
+      "lastName": "Rutherford",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=5406712144068608",
+      "companyLogo": "https://picsum.photos/seed/zPWcwJlj/640/480",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/U60T9xZD/640/480"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=7091298272018432"
+        }
+      ],
+      "price": {
+        "min": "507.00",
+        "max": "703.00"
+      },
+      "address": {
+        "street": "10888 Humberto Common",
+        "city": "Nicolasland"
+      },
+      "services": {
+        "bed": 3,
+        "bath": 1,
+        "carPark": 1,
+        "area": 547
+      },
+      "type": "Acreage",
+      "inspectation": "1984-01-06T00:37:24.697Z",
+      "video": "false"
+    },
+    {
+      "id": "b92f857f-fa41-4c80-b663-8c1126459a96",
+      "firstName": "Cielo",
+      "lastName": "Wuckert",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=7073711874113536",
+      "companyLogo": "https://loremflickr.com/640/480?lock=4410968742297600",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/5LKzAG/640/480"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=7908908484001792"
+        }
+      ],
+      "price": {
+        "min": "390.00",
+        "max": "590.00"
+      },
+      "address": {
+        "street": "98344 Pagac Haven",
+        "city": "South Novellachester"
+      },
+      "services": {
+        "bed": 1,
+        "bath": 2,
+        "carPark": 2,
+        "area": 768
+      },
+      "type": "Acreage",
+      "inspectation": "2001-11-21T13:26:34.591Z",
+      "video": "true"
+    },
+    {
+      "id": "02d28335-a6cc-44ed-a3b6-22411e9b49bc",
+      "firstName": "Patricia",
+      "lastName": "Hauck",
+      "ownerAvatar": "https://picsum.photos/seed/p2v75Cd0M/640/480",
+      "companyLogo": "https://loremflickr.com/640/480?lock=5124480869335040",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=791314954190848"
+        },
+        {
+          "url": "https://picsum.photos/seed/2vf3QZkg3F/640/480"
+        }
+      ],
+      "price": {
+        "min": "788.00",
+        "max": "910.00"
+      },
+      "address": {
+        "street": "22587 Chaim Pass",
+        "city": "Rolfsonfort"
+      },
+      "services": {
+        "bed": 1,
+        "bath": 2,
+        "carPark": 2,
+        "area": 931
+      },
+      "type": "Villa",
+      "inspectation": "1982-02-06T09:29:50.991Z",
+      "video": "false"
+    },
+    {
+      "id": "47d27618-1cd0-475e-884b-cd91bb4d5016",
+      "firstName": "Derick",
+      "lastName": "Kemmer",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=794510965604352",
+      "companyLogo": "https://picsum.photos/seed/ESOEI/640/480",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=5116880144564224"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=8894494483152896"
+        }
+      ],
+      "price": {
+        "min": "595.00",
+        "max": "388.00"
+      },
+      "address": {
+        "street": "648 Davis Ports",
+        "city": "Fort Sydnieboro"
+      },
+      "services": {
+        "bed": 1,
+        "bath": 1,
+        "carPark": 3,
+        "area": 545
+      },
+      "type": "Retirement Living",
+      "inspectation": "1987-03-20T06:35:42.501Z",
+      "video": "false"
+    },
+    {
+      "id": "6730f8f3-6a4b-4871-b921-9591528bbc52",
+      "firstName": "Wilma",
+      "lastName": "Huel",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=6940873082273792",
+      "companyLogo": "https://loremflickr.com/640/480?lock=2657305317343232",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=1911009730101248"
+        },
+        {
+          "url": "https://picsum.photos/seed/6d9IxJE/640/480"
+        }
+      ],
+      "price": {
+        "min": "523.00",
+        "max": "334.00"
+      },
+      "address": {
+        "street": "555 Champlin Lodge",
+        "city": "Waelchistad"
+      },
+      "services": {
+        "bed": 3,
+        "bath": 3,
+        "carPark": 2,
+        "area": 700
+      },
+      "type": "Villa",
+      "inspectation": "2012-04-24T13:13:28.537Z",
+      "video": "false"
+    },
+    {
+      "id": "3a456025-f77a-4cf6-a994-06cdc64edde2",
+      "firstName": "Gaston",
+      "lastName": "Kuhlman",
+      "ownerAvatar": "https://picsum.photos/seed/jPVcc7Gql4/640/480",
+      "companyLogo": "https://picsum.photos/seed/EHDq1ZTO5/640/480",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=4326678568370176"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=5841472888766464"
+        }
+      ],
+      "price": {
+        "min": "955.00",
+        "max": "599.00"
+      },
+      "address": {
+        "street": "1126 Aimee Underpass",
+        "city": "Cassinview"
+      },
+      "services": {
+        "bed": 2,
+        "bath": 1,
+        "carPark": 3,
+        "area": 632
+      },
+      "type": "House",
+      "inspectation": "1980-06-07T12:11:42.700Z",
+      "video": "false"
+    },
+    {
+      "id": "27c37839-4b71-4c11-ba3b-6e44c0646855",
+      "firstName": "Jacey",
+      "lastName": "Hoppe",
+      "ownerAvatar": "https://picsum.photos/seed/szEsKg2/640/480",
+      "companyLogo": "https://loremflickr.com/640/480?lock=4106557098819584",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=43253669822464"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=5966782259003392"
+        }
+      ],
+      "price": {
+        "min": "149.00",
+        "max": "825.00"
+      },
+      "address": {
+        "street": "3121 Audra Spurs",
+        "city": "Guiseppefurt"
+      },
+      "services": {
+        "bed": 3,
+        "bath": 3,
+        "carPark": 3,
+        "area": 822
+      },
+      "type": "Villa",
+      "inspectation": "1986-08-28T20:49:55.868Z",
+      "video": "false"
+    },
+    {
+      "id": "0d4a2358-3b50-460e-a209-b7b3c8b7a1fb",
+      "firstName": "Dakota",
+      "lastName": "McGlynn",
+      "ownerAvatar": "https://picsum.photos/seed/YaSe5U/640/480",
+      "companyLogo": "https://picsum.photos/seed/GSWeAjDD/640/480",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=6308005823905792"
+        },
+        {
+          "url": "https://picsum.photos/seed/5iKUN1o39/640/480"
+        }
+      ],
+      "price": {
+        "min": "693.00",
+        "max": "299.00"
+      },
+      "address": {
+        "street": "690 Jaron Fords",
+        "city": "Hoppechester"
+      },
+      "services": {
+        "bed": 1,
+        "bath": 1,
+        "carPark": 2,
+        "area": 639
+      },
+      "type": "Villa",
+      "inspectation": "2011-11-14T06:46:41.908Z",
+      "video": "false"
+    },
+    {
+      "id": "ec04a55b-2556-43e1-80a5-260ad22345f2",
+      "firstName": "Otho",
+      "lastName": "Stracke",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=4090436436099072",
+      "companyLogo": "https://picsum.photos/seed/YGIwb/640/480",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/OUbHKA/640/480"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=5530213056249856"
+        }
+      ],
+      "price": {
+        "min": "313.00",
+        "max": "925.00"
+      },
+      "address": {
+        "street": "5000 Amara Extension",
+        "city": "East Noelbury"
+      },
+      "services": {
+        "bed": 2,
+        "bath": 2,
+        "carPark": 1,
+        "area": 808
+      },
+      "type": "Apartment",
+      "inspectation": "2018-06-06T07:59:44.980Z",
+      "video": "false"
+    },
+    {
+      "id": "11afa29a-2020-41ef-bfe2-5c8ce42fce21",
+      "firstName": "Marilie",
+      "lastName": "Heidenreich",
+      "ownerAvatar": "https://picsum.photos/seed/ALvIssp3Vt/640/480",
+      "companyLogo": "https://picsum.photos/seed/Vyivkv/640/480",
+      "images": [
+        {
+          "url": "https://loremflickr.com/640/480?lock=8817326224834560"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=605713946640384"
+        }
+      ],
+      "price": {
+        "min": "945.00",
+        "max": "555.00"
+      },
+      "address": {
+        "street": "39593 Zena Square",
+        "city": "East Junius"
+      },
+      "services": {
+        "bed": 1,
+        "bath": 3,
+        "carPark": 2,
+        "area": 515
+      },
+      "type": "Retirement Living",
+      "inspectation": "1983-06-03T23:08:23.872Z",
+      "video": "false"
+    },
+    {
+      "id": "dc9fef89-ec0a-4407-af64-771fb86f9cf0",
+      "firstName": "Kristofer",
+      "lastName": "Leuschke",
+      "ownerAvatar": "https://loremflickr.com/640/480?lock=7116414053777408",
+      "companyLogo": "https://loremflickr.com/640/480?lock=4978626357362688",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/wZ0BSX/640/480"
+        },
+        {
+          "url": "https://picsum.photos/seed/xsRVfT46/640/480"
+        }
+      ],
+      "price": {
+        "min": "973.00",
+        "max": "318.00"
+      },
+      "address": {
+        "street": "9215 Murphy Land",
+        "city": "Riverside"
+      },
+      "services": {
+        "bed": 2,
+        "bath": 2,
+        "carPark": 3,
+        "area": 900
+      },
+      "type": "Villa",
+      "inspectation": "1988-02-15T08:56:46.940Z",
+      "video": "true"
+    },
+    {
+      "id": "50d735fc-4901-4937-b389-86574a43e361",
+      "firstName": "Alexzander",
+      "lastName": "Cummerata",
+      "ownerAvatar": "https://picsum.photos/seed/q988UcNuCV/640/480",
+      "companyLogo": "https://loremflickr.com/640/480?lock=2233673820667904",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/pjJgwDsBts/640/480"
+        },
+        {
+          "url": "https://loremflickr.com/640/480?lock=1154428360982528"
+        }
+      ],
+      "price": {
+        "min": "310.00",
+        "max": "125.00"
+      },
+      "address": {
+        "street": "2871 Kihn Gardens",
+        "city": "Floydview"
+      },
+      "services": {
+        "bed": 2,
+        "bath": 3,
+        "carPark": 2,
+        "area": 513
+      },
+      "type": "House",
+      "inspectation": "2008-05-14T07:22:08.541Z",
+      "video": "false"
+    }
+  ]
+}
