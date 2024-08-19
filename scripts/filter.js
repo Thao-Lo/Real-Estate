@@ -3,33 +3,140 @@ $(window).ready(function () {
         {
             sectionName: "property type",
             sectionClass: "property-type",
-            description: null
+            description: null,
+            isForBuy: true,
+            isForRent: true,
+            isForSold: true
         },
         {
             sectionName: "price",
             sectionClass: "price-type",
-            description: null
+            description: null,
+            isForBuy: true,
+            isForRent: true,
+            isForSold: true
+        },      
+         {
+            sectionName: "sold date",
+            sectionClass: "sold-date-type",
+            description: null,
+            isForBuy: false,
+            isForRent: false,
+            isForSold: true
         },
         {
             sectionName: "bedrooms",
             sectionClass: "bedrooms-type",
-            description: null
+            description: null,
+            isForBuy: true,
+            isForRent: true,
+            isForSold: true
         },
         {
             sectionName: "bathrooms",
             sectionClass: "bathrooms-type",
-            description: null
+            description: null,
+            isForBuy: true,
+            isForRent: true,
+            isForSold: true
         },
         {
             sectionName: "car spaces",
             sectionClass: "carspaces-type",
-            description: null
+            description: null,
+            isForBuy: true,
+            isForRent: true,
+            isForSold: true
+        },
+        {
+            sectionName: "available date",
+            sectionClass: "available-date-type",
+            description: null,
+            isForBuy: false,
+            isForRent: true,
+            isForSold: false
+        },
+        {
+            sectionName: "property requirements",
+            sectionClass: "property-requirements-type",
+            description: null,
+            isForBuy: false,
+            isForRent: true,
+            isForSold: false
+        },       
+        {
+            sectionName: "affordable housing",
+            sectionClass: "affordable-housing-type",
+            description: "This filter finds properties that are offered under rental affordability schemes.",
+            isForBuy: false,
+            isForRent: true,
+            isForSold: false
+        },
+        {
+            sectionName: "new or established property",
+            sectionClass: "established-property-type",
+            description: null,
+            isForBuy: true,
+            isForRent: false,
+            isForSold: false
+        },
+        {
+            sectionName: "outdoor features",
+            sectionClass: "outdoor-features-type",
+            description: null,
+            isForBuy: true,
+            isForRent: true,
+            isForSold: true
+        },
+        {
+            sectionName: "indoor features",
+            sectionClass: "indoor-features-type",
+            description: null,
+            isForBuy: true,
+            isForRent: true,
+            isForSold: true
+        },
+        {
+            sectionName: "Climate control & energy",
+            sectionClass: "climate-control-type",
+            description: null,
+            isForBuy: true,
+            isForRent: true,
+            isForSold: true
         },
         {
             sectionName: "accessibility features",
             sectionClass: "accessibility-features-type",
-            description: "These filters find properties with accessibility features in their descriptions. We're working to improve their accuracy."
+            description: "These filters find properties with accessibility features in their descriptions. We're working to improve their accuracy.",
+            isForBuy: true,
+            isForRent: true,
+            isForSold: true
+        },
+        {
+            sectionName: "keywords",
+            sectionClass: "keywords-type",
+            description: null,
+            isForBuy: true,
+            isForRent: true,
+            isForSold: true
+        },
+        {
+            sectionName: "Sale method",
+            sectionClass: "sale-method-type",
+            description: null,
+            isForBuy: true,
+            isForRent: true,
+            isForSold: true
+        },
+        {
+            sectionName: "exclude-checkbox",
+            sectionClass: "exclude-checkbox-type",
+            description: null,
+            isForBuy: true,
+            isForRent: true,
+            isForSold: false
         }
+
     ]
 
     const propertyTypeData = [
@@ -198,10 +305,49 @@ $(window).ready(function () {
         }
 
     ]
+    const outdoorFeatures = [
+        {
+            type: "swimming pool",
+            value: "swimmingPool",
+        },
+        {
+            type: "balcony",
+            value: "balcony",
+        },
+        {
+            type: "garage",
+            value: "garage",
+        },
+        {
+            type: "outdoor area",
+            value: "outdoorArea",
+        },
+        {
+            type: "undercover parking",
+            value: "undercoverParking",
+        },
+        {
+            type: "shed",
+            value: "shed",
+        },
+        {
+            type: "fully fenced",
+            value: "fullyFenced",
+        },
+        {
+            type: "outdoor spa",
+            value: "outdoorSpa",
+        },
+        {
+            type: "tennis court",
+            value: "tennisCourt",
+        }
+    ]
 
     let buyContainer = $("#pills-filter-buy");
     let rentContainer = $("#pills-filter-rent");
     let soldContainer = $("#pills-filter-sold");
+
     let rentPropertyTypeData = propertyTypeData.filter(({ isRent }) => isRent);
     console.log(rentPropertyTypeData);
 
@@ -332,11 +478,11 @@ $(window).ready(function () {
         })
     }
 
-    function generateAccessibilityFeature(tabContainer, data) {
-        let showFeatures = data.filter((item, index) => index < 4);
-        let collapseFeatures = data.filter((item, index) => index >= 4);
+    function generateAccessibilityFeature(tabContainer, feature, data) {
+        // let showFeatures = data.filter((item, index) => index < 4);
+        // let collapseFeatures = data.filter((item, index) => index >= 4);
         const generateFeatures = (data, container) => {
-            data.forEach(({ type, value }, index) => {
+            data.forEach(({ type, value }) => {
                 let htmlTemplate =
                     `
                <div class="col-6 form-check py-2 lh-base ">
@@ -351,24 +497,39 @@ $(window).ready(function () {
             })
         }
         let collapseContainer = `
-         <div class="collapse row ps-3" id="collapse-accessibility"> <div>       
+         <div class="collapse row ps-3" id=collapse-${feature}> <div>       
       `
         let collapseLink = `
        <p class="d-inline-flex gap-1 align-items-center">
-             <a class="collapse-link" data-bs-toggle="collapse" href="#collapse-accessibility" 
-                     role="button" aria-expanded="false" aria-controls="collapse-accessibility">
-                 Show more accessibility features
+             <a class="collapse-link" data-bs-toggle="collapse" href="#collapse-${feature}" 
+                     role="button" aria-expanded="false" aria-controls="collapse-${feature}">
+                 Show more ${feature} features
              </a>
-             <i class="fa-solid fa-chevron-up"></i>
+             <i class="fa-solid fa-chevron-down"></i>
          </p>
       `
-        tabContainer.find('.accessibility-features-type').append(collapseContainer)
-        tabContainer.find('.accessibility-features-type').append(collapseLink)
-        generateFeatures(showFeatures, '.accessibility-features-type-container')
-        generateFeatures(collapseFeatures, '#collapse-accessibility');
+        tabContainer.find(`.${feature}-features-type`).append(collapseContainer)
+        tabContainer.find(`.${feature}-features-type`).append(collapseLink)
+        generateFeatures(data.slice(0, 4), `.${feature}-features-type-container`)
+        generateFeatures(data.slice(4), `#collapse-${feature}`);
 
-        let toggleLink = $('.accessibility-features-type').find('.collapse-link');
-        console.log(toggleLink);
+        let toggleLink = $(`.${feature}-features-type`).find('.collapse-link');
+        // handleCollapseToggleLink(toggleLink);
+        toggleLink.on('click', function () {
+            let isExpanded = $(this).attr('aria-expanded') === "true";
+            if (isExpanded) {
+                $(this).html(`Show less ${feature} features`);
+                $(this).next('i').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+            } else {
+                $(this).html(`Show more ${feature} features`)
+                $(this).next('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            }
+        })
+
+    }
+
+
+    function handleCollapseToggleLink(toggleLink) {
         toggleLink.on('click', function () {
             let isExpanded = $(this).attr('aria-expanded') === "true";
             if (isExpanded) {
@@ -432,7 +593,8 @@ $(window).ready(function () {
         generateBedroomType(rentContainer, bedroomData)
         updateMinMaxDropdown(rentContainer, "bedroom")
         generateBathroomAndCarSpace(rentContainer, bathroomCarSpace)
-        generateAccessibilityFeature(rentContainer, accessibilityFeatureData);
+        generateAccessibilityFeature(rentContainer, 'accessibility', accessibilityFeatureData);
+        generateAccessibilityFeature(rentContainer, 'outdoor', outdoorFeatures);
     };
 
     function generateSoldComponent() {
