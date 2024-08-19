@@ -21,6 +21,11 @@ $(window).ready(function () {
             description: null
         },
         {
+            sectionName: "car spaces",
+            sectionClass: "carspaces-type",
+            description: null
+        },
+        {
             sectionName: "accessibility features",
             sectionClass: "accessibility-features-type",
             description: "These filters find properties with accessibility features in their descriptions. We're working to improve their accuracy."
@@ -152,6 +157,47 @@ $(window).ready(function () {
     }
 
     ]
+    const bathroomCarSpace = [{
+        type: 'bathroom',
+        name: 'bath room',
+        space: [1, 2, 3, 4, 5]
+    },
+    {
+        type: 'carspace',
+        name: 'car space',
+        space: [1, 2, 3, 4, 5]
+    }]
+    const accessibilityFeatureData = [
+        {
+            type: "single storey",
+            value: "singleStorey",
+        },
+        {
+            type: "wide doorways",
+            value: "wideDoorways",
+        },
+        {
+            type: "Step free entry",
+            value: "stepFreeEntry",
+        },
+        {
+            type: "elevator",
+            value: "elevator",
+        },
+        {
+            type: "roll in shower",
+            value: "rollInShower",
+        },
+        {
+            type: "accessible parking",
+            value: "accessibleParking",
+        },
+        {
+            type: "bathroom grab rails",
+            value: "BathroomGrabRails",
+        }
+
+    ]
 
     let buyContainer = $("#pills-filter-buy");
     let rentContainer = $("#pills-filter-rent");
@@ -261,6 +307,80 @@ $(window).ready(function () {
             tabContainer.find('.bedrooms-type-container').append(template);
         })
     }
+    function generateBathroomAndCarSpace(tabContainer, data) {
+        data.forEach(({ type, name, space }) => {
+            let bathroomOptions = space.map(space => `<option value="${space}">${space}+</option>`).join('');
+            let htmlBathroomTemplate = `
+                <div class="col-6">
+                    <div class="input-group mb-3">
+                        <select class="form-select py-12 groupSelect${type}">
+                             <option selected>Any</option>  
+                             ${bathroomOptions}
+                         </select>
+                     </div>
+                `
+            if (type === 'bathroom') {
+                tabContainer.find('.bathrooms-type-container').append(htmlBathroomTemplate)
+            }
+            if (type === 'carspace') {
+                {
+                    tabContainer.find('.carspaces-type-container').append(htmlBathroomTemplate)
+                }
+
+
+            }
+        })
+    }
+
+    function generateAccessibilityFeature(tabContainer, data) {
+        let showFeatures = data.filter((item, index) => index < 4);
+        let collapseFeatures = data.filter((item, index) => index >= 4);
+        const generateFeatures = (data, container) => {
+            data.forEach(({ type, value }, index) => {
+                let htmlTemplate =
+                    `
+               <div class="col-6 form-check py-2 lh-base ">
+                     <input class="form-check-input cursor-pointer" type="checkbox" value="${value}"
+                         id="${value}">
+                     <label class="form-check-label cursor-pointer text-capitalize" for="${value}">
+                         ${type}
+                    </label>
+                 </div>
+              `
+                tabContainer.find(container).append(htmlTemplate)
+            })
+        }
+        let collapseContainer = `
+         <div class="collapse row ps-3" id="collapse-accessibility"> <div>       
+      `
+        let collapseLink = `
+       <p class="d-inline-flex gap-1 align-items-center">
+             <a class="collapse-link" data-bs-toggle="collapse" href="#collapse-accessibility" 
+                     role="button" aria-expanded="false" aria-controls="collapse-accessibility">
+                 Show more accessibility features
+             </a>
+             <i class="fa-solid fa-chevron-up"></i>
+         </p>
+      `
+        tabContainer.find('.accessibility-features-type').append(collapseContainer)
+        tabContainer.find('.accessibility-features-type').append(collapseLink)
+        generateFeatures(showFeatures, '.accessibility-features-type-container')
+        generateFeatures(collapseFeatures, '#collapse-accessibility');
+
+        let toggleLink = $('.accessibility-features-type').find('.collapse-link');
+        console.log(toggleLink);
+        toggleLink.on('click', function () {
+            let isExpanded = $(this).attr('aria-expanded') === "true";
+            if (isExpanded) {
+                $(this).html('Show less accessibility features');
+                $(this).next('i').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+            } else {
+                $(this).html('Show more accessibility features')
+                $(this).next('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            }
+        })
+
+    }
 
     function updateMinMaxDropdown(tabContainer, category) {
         let minPrices = tabContainer.find(`.groupSelectMin[data-category="${category}"]`);
@@ -302,7 +422,6 @@ $(window).ready(function () {
             console.log(options.length);
         }
     }
-    
 
     //for each container, call certain components
     function generateRentComponent() {
@@ -310,8 +429,10 @@ $(window).ready(function () {
         generatePropertyType(rentContainer, rentPropertyTypeData);
         generatePriceType(rentContainer, rentdPriceData);
         updateMinMaxDropdown(rentContainer, "price")
-        generateBedroomType(rentContainer,bedroomData)
+        generateBedroomType(rentContainer, bedroomData)
         updateMinMaxDropdown(rentContainer, "bedroom")
+        generateBathroomAndCarSpace(rentContainer, bathroomCarSpace)
+        generateAccessibilityFeature(rentContainer, accessibilityFeatureData);
     };
 
     function generateSoldComponent() {
@@ -319,8 +440,10 @@ $(window).ready(function () {
         generatePropertyType(soldContainer, propertyTypeData);
         generatePriceType(soldContainer, buyOrSoldPriceData)
         updateMinMaxDropdown(soldContainer, "price")
-        generateBedroomType(soldContainer,bedroomData)
+        generateBedroomType(soldContainer, bedroomData)
         updateMinMaxDropdown(soldContainer, "bedroom")
+        generateBathroomAndCarSpace(soldContainer, bathroomCarSpace)
+
     }
     //call function for each container
     generateRentComponent();
