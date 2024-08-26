@@ -64,6 +64,10 @@
   cursor: pointer;
 }
 
+.list-style-none {
+  list-style-type: none;
+}
+
 .custom-link {
   text-decoration: none;
   cursor: pointer;
@@ -72,6 +76,11 @@
 }
 .custom-link:hover {
   text-decoration: underline;
+}
+
+.svg-icon-small {
+  width: 1.125rem;
+  height: 1.125rem;
 }
 
 nav .navbar-brand img {
@@ -250,6 +259,10 @@ nav .nav-item a {
   line-height: 1.75rem;
 }
 
+.fs-1125 {
+  font-size: 1.125rem;
+}
+
 .fs-075 {
   font-size: 0.75rem;
 }
@@ -281,6 +294,58 @@ nav .nav-item a {
   text-decoration: none;
   color: #00639E;
   font-weight: 600;
+}
+
+.divided-content .estate-list .single-estate-card {
+  width: 40rem;
+  border: 1px solid white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+.divided-content .estate-list .single-estate-card .estate-card-header {
+  height: 3.375rem;
+  width: 100%;
+}
+.divided-content .estate-list .single-estate-card .estate-card-header .agent-logo {
+  width: 12rem;
+  height: 100%;
+}
+.divided-content .estate-list .single-estate-card .estate-card-header .agent-logo img {
+  width: 100%;
+  height: 100%;
+}
+.divided-content .estate-list .single-estate-card .estate-card-header .agent-profile .agent-avatar {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+}
+.divided-content .estate-list .single-estate-card .estate-card-header .agent-profile .agent-avatar img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  border-radius: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+.divided-content .estate-list .single-estate-card .estate-card-body {
+  position: relative;
+}
+.divided-content .estate-list .single-estate-card .estate-card-body img {
+  width: 100%;
+  height: 25.5rem;
+}
+.divided-content .estate-list .single-estate-card .estate-card-body .under-offer {
+  position: absolute;
+  background-color: white;
+  color: gray;
+  left: 1rem;
+  bottom: 1rem;
+}
+.divided-content .estate-list .single-estate-card .estate-card-footer {
+  height: 8.5rem;
+  padding: 1rem 1.5rem;
 }
 
 .filter-body .nav-pills {

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagination</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -12,41 +13,295 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" $y="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
+    <div class="container" style="max-width: 1110px;">
+        <header>
+            <nav class="navbar">
+                <div class="container-fluid d-flex align-items-baseline">
+                    <button class="btn btn-outline d-none d-md-inline" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <span class="navbar-toggler-icon"></span>
+                        <span>Menu</span>
+                    </button>
 
-    <!-- /
-        On load => call the search API to get the list properties
-        => research how to pagination on JSON-SERVER
-        => call first page with 10 items =>
-        => generate 10 item to 10 mock HTML
+                    <button class="btn btn-outline d-inline d-md-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-        Get the page number from URL
-        => paste that number to the data Url
-        => http://localhost:3000/search?_page={}
-        //eq(0): target the first .page-item element
+                    <a class="navbar-brand mx-auto" href="#">
+                        <img src="/assets/icons/logo.svg" alt="">
+                    </a>
 
-        More than 5 pages
-        1~3: pre 1,2,3,4...next (<= firstPage + 2)        
-        lastpage-2: pre 1...7,8,9 (9 is the last page) (>= lastPage - 2)
-        4~: pre 1...3,4,5...next (else)
-    -->
-    <section class="mb-3">
+                    <div class="">
+                        <a class="btn btn-light" href="#" role="button">Sign In</a>
+                        <button type="button" class="btn btn-primary px-4">Join</button>
+                    </div>
+                </div>
+            </nav>
+            <!-- MENU COLLAPSE -->
+            <div class="collapse" id="collapseExample">
+                <div class="">
+                    <ul class="list-style-none mx-auto d-flex justify-content-center ">
+                        <li class="">
+                            <a class="btn btn-light fw-semibold " aria-current="page" href="#">Buy</a>
+                        </li>
+                        <li class="">
+                            <a class="btn btn-light fw-semibold" href="#">Rent</a>
+                        </li>
+                        <li class="">
+                            <a class="btn btn-light fw-semibold" href="#">Sold</a>
+                        </li>
+                        <li class="">
+                            <a class="btn btn-light fw-semibold" href="#">New homes</a>
+                        </li>
+                        <li class="">
+                            <a class="btn btn-light fw-semibold" href="#">Find agents</a>
+                        </li>
+                        <li class="">
+                            <a class="btn btn-light fw-semibold" href="#">Home loans</a>
+                        </li>
+                        <li class="">
+                            <a class="btn btn-light fw-semibold" href="#">News</a>
+                        </li>
+                        <li class="">
+                            <a class="btn btn-light fw-semibold" href="#">Commercial</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item my-2">
+                            <a class="btn btn-light" aria-current="page" href="#" data-bs-toggle="tooltip"
+                                data-bs-placement="right" data-bs-title="Real estate and property for sale">Buy</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a class="btn btn-light" href="#" data-bs-toggle="tooltip" data-bs-placement="right"
+                                data-bs-title="Rental property">Rent</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a class="btn btn-light" href="#" data-bs-toggle="tooltip" data-bs-placement="right"
+                                data-bs-title="Sold property">Sold</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a class="btn btn-light" href="#" data-bs-toggle="tooltip" data-bs-placement="right"
+                                data-bs-title="Share accommodation">Share</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a class="btn btn-light" href="#" data-bs-toggle="tooltip" data-bs-placement="right"
+                                data-bs-title="New homes, land estates & off the plan appartments">New homes</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a class="btn btn-light" href="#" data-bs-toggle="tooltip" data-bs-placement="right"
+                                data-bs-title="Find a real estate agent">Find agents</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a class="btn btn-light" href="#" data-bs-toggle="tooltip" data-bs-placement="right"
+                                data-bs-title="Home loans">Home loans</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a class="btn btn-light" href="#" data-bs-toggle="tooltip" data-bs-placement="right"
+                                data-bs-title="Property news">News</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item my-2">
+                            <a class="btn btn-light" href="#" data-bs-toggle="tooltip" data-bs-placement="right"
+                                data-bs-title="Commercial real estate for sale and lease">Commercial</a>
 
-    </section>
+                            <svg class="CK__Icon--medium" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.5 1a.5.5 0 0 0 0 1h4.793L6.146 9.146a.5.5 0 0 0 .708.708L14 2.707V7.5a.5.5 0 0 0 1 0v-6a.5.5 0 0 0-.33-.47M7 4.5a.5.5 0 0 0-.5-.5h-3A2.5 2.5 0 0 0 1 6.5v6A2.5 2.5 0 0 0 3.5 15h6a2.5 2.5 0 0 0 2.5-2.5v-3a.5.5 0 0 0-1 0v3A1.5 1.5 0 0 1 9.5 14h-6A1.5 1.5 0 0 1 2 12.5v-6A1.5 1.5 0 0 1 3.5 5h3a.5.5 0 0 0 .5-.5Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
 
-    <ul class="pagination">
-        <li class="page-item previous">
-            <a class="page-link active" href="">Previous</a>
-        </li>
+        <section class="row border border-start-0 border-end-0 py-3 mb-3">
+            <div class="col-12 d-flex gap-2">
+                <button type="button"
+                    class="btn btn-outline-secondary border-0 px-2 text-capitalize d-flex align-items-center align-self-start flex-grow-1">
+                    <svg class="CK__Icon--medium flex-1 align-self-start" viewBox="0 0 16 16" fill="none" width="2rem"
+                        height="1rem" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7 1a6 6 0 1 0 3.874 10.582l3.272 3.272a.5.5 0 0 0 .708-.708l-3.272-3.272A6 6 0 0 0 7 1ZM2 7a5 5 0 1 1 10 0A5 5 0 0 1 2 7Z"
+                            fill="currentColor"></path>
+                    </svg>
+                    <span class="d-none d-md-inline">Search region, suburb or postcode</span>
+                    <span class="d-md-none d-sm-inline">Search region, suburb...</span>
+                </button>
+                <button type="button"
+                    class="btn btn-outline-secondary rounded-pill px-18 fw-bold d-none d-sm-inline text-nowrap">Property
+                    type</button>
+                <button type="button"
+                    class="btn btn-outline-secondary rounded-pill px-18 fw-bold d-none d-lg-inline">Price</button>
+                <button type="button"
+                    class="btn btn-outline-secondary rounded-pill px-18 fw-bold d-none d-md-inline">Bed</button>
+                <button
+                    class="btn btn-outline-secondary fw-bold rounded-pill flex-1 align-items-center align-self-start gap-1 py-2 px-23"
+                    type="button" data-bs-toggle="modal" data-bs-target="#filter">
+                    <svg class="CK__Icon--medium" viewBox="0 0 16 16" fill="none" width="1rem" height="1rem"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.5 6h2.563a2 2 0 0 0 3.874 0H14.5a.5.5 0 0 0 0-1H7.937a2 2 0 0 0-3.874 0H1.5a.5.5 0 0 0 0 1ZM6 4.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM1.5 10a.5.5 0 0 0 0 1h6.563a2 2 0 0 0 3.874 0H14.5a.5.5 0 0 0 0-1h-2.563a2 2 0 0 0-3.874 0H1.5Zm9.5.5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z"
+                            fill="currentColor"></path>
+                    </svg>
+                    <span>Filter</span>
+                </button>
+                <button type="button" class="btn btn-outline-secondary rounded border-0 px-18 fw-bold">Map</button>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="col-md-12 col-lg-9">
+                <div class="row">
+                    <div class="col-12 d-flex ">
+                        <div class="me-auto pt-2 pb-3 fw-semibold fs-1125">Real Estate & Property for Sale in Australia
+                        </div>
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-outline-secondary rounded px-18 align-self-end">
+                                <i class="fa-regular fa-star"></i>
+                               <span class="fw-medium"> Save Search</span>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="col-12 border-bottom pb-3">
+                        <span class="fs-0875">1-25 of 189723 properties</span>
+                    </div>
+                    <div class="col-12 d-flex justify-content-between align-items-center border-bottom py-2 mb-3">
+                        <a class="d-flex text-decoration-none text-danger gap-1 fw-semibold" href="#">
+                            <svg class="svg-icon-small" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 4.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM5.5 3a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9Zm0 4.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9Zm0 4.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9ZM3 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-1 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <span class="fs-0875">List</span>
+                        </a>
+                        <a class="d-flex text-decoration-none text-dark gap-1 fw-semibold" href="#">
+                            <svg class="svg-icon-small" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8 1a5 5 0 0 0-5 5c0 .286.024.567.07.84.293 1.828 1.46 3.84 2.506 5.356A30.355 30.355 0 0 0 7.58 14.78l.034.039.01.01.002.003.001.001L8 14.5l-.372.335a.5.5 0 0 0 .744 0L8 14.5l.372.334.003-.004.01-.01.034-.039.128-.147a30.385 30.385 0 0 0 1.877-2.438c1.046-1.515 2.212-3.528 2.506-5.356A5 5 0 0 0 8 1Zm.228 12.456L8 13.733a29.379 29.379 0 0 1-1.601-2.105c-1.036-1.5-2.087-3.357-2.342-4.948v-.005A4 4 0 1 1 12 6c0 .23-.02.456-.057.675v.005c-.255 1.591-1.306 3.448-2.342 4.948a29.377 29.377 0 0 1-1.373 1.828ZM8 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM7 6a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <span class="fs-0875">Map</span>
+                        </a>
+                        <a class="d-flex text-decoration-none text-dark gap-1 fw-semibold" href="#">
+                            <svg class="svg-icon-small" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4 2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1h2V2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1h.5A2.5 2.5 0 0 1 15 5.5v7a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5v-7A2.5 2.5 0 0 1 3.5 3H4V2Zm6 1v1h1V2h-1v1ZM9 4H7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1h-.5A1.5 1.5 0 0 0 2 5.5V6h12v-.5A1.5 1.5 0 0 0 12.5 4H12a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1ZM6 2v2H5V2h1ZM2 7v5.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V7H2Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <span class="fs-0875">Inspection</span>
+                        </a>
+                        <a class="d-flex text-decoration-none text-dark gap-1 fw-semibold" href="#">
+                            <svg class="svg-icon-small" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.363 1.425a1.601 1.601 0 0 0-2.355 2.167L3.592 6.008a1.602 1.602 0 0 0-2.167 2.355l2.596 2.596a1.601 1.601 0 0 0 2.355-2.167l.305-.304 4.658 5.505a1.5 1.5 0 0 0 2.206.092l.54-.54a1.5 1.5 0 0 0-.092-2.206L8.488 6.681l.304-.305a1.602 1.602 0 0 0 2.167-2.355L8.363 1.425ZM7.39 7.778l.388-.388 5.57 4.713a.5.5 0 0 1 .03.735l-.54.54a.5.5 0 0 1-.735-.03L7.39 7.777Zm.014-1.428.677-.677-1.37-1.37-2.408 2.409 1.37 1.37.677-.678a.504.504 0 0 1 .008-.008l1.038-1.038a.556.556 0 0 1 .008-.008Zm-.599-4.218a.601.601 0 0 1 .851 0l2.596 2.597a.601.601 0 1 1-.85.85L6.805 2.983a.601.601 0 0 1 0-.85ZM3.237 7.06l.006.006 2.076 2.077.006.006.254.254a.601.601 0 1 1-.85.85L2.132 7.656a.601.601 0 0 1 .851-.85l.254.253Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <span class="fs-0875">Auctions</span>
+                        </a>
+                        <form class="d-flex align-items-center gap-2 fw-semibold">
+                            <span class="fs-0875">Sort</span>
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Featured</option>
+                                <option>Date (Newest - Oldest)</option>
+                                <option>Date (Oldest - Newest)</option>
+                                <option>Price (Lowest - Highest)</option>
+                                <option>Date (Highest - Lowest)</option>
+                                <option>Next Inspection</option>
+                                <option>Next Auction</option>
+                            </select>
+                        </form>
+                    </div>
+
+                    <div class="divided-content col-12">
+                        <ul class="estate-list list-style-none">
+                            <li class="single-estate-card mb-4 shadow-sm">
+                                <div class="estate-card-header d-flex justify-content-between align-items-center" style="background-color:#1e3860">
+                                    <div class="agent-logo p-2">
+                                        <img src="./assets/logo/stratton.JPG" alt="">
+                                    </div>
+                                    <div class="agent-profile d-flex gap-2 align-items-center">
+                                        <span class="agent-name text-white fs-0875 fw-semibold me-3">Vicktor Sutrisno</span>
+                                        <span class="agent-avatar">
+                                            <img src="./assets/avatar/viktor.JPG" alt="">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="estate-card-body">
+                                    <img src="./assets/image/estate.JPG" alt="">
+                                    <div class="under-offer fs-075 fw-semibold px-2 py-1 rounded">&#9679; Under offer</div>
+                                </div>
+                                <div class="estate-card-footer">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="estate-price-offer my-2 fw-bold fs-5">U/O By TEAM SUTRISNO</p>
+                                        <button class="btn btn-outline-secondary border-0">
+                                            <i class="fa-regular fa-star"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mb-2">150 Kenwick Road, Kenwick</div>
+                                    <div class="d-flex gap-3">
+                                        <div class="bed ">
+                                            <i class="fa-solid fa-bed "></i>
+                                            <span class="text-dark-emphasis">3</span>
+                                        </div>
+                                        <div class="bath">
+                                            <i class="fa-solid fa-bath"></i>
+                                            <span class="text-dark-emphasis">1</span>
+                                        </div>
+                                        <div class="car-space">
+                                            <i class="fa-solid fa-car"></i>
+                                            <span class="text-dark-emphasis">2</span>
+                                        </div>
+                                        <div class="land-size">
+                                            <i class="fa-solid fa-expand"></i>
+                                            <span class="text-dark-emphasis">683m&sup2</span>
+                                        </div>
+                                        <div class="estate-type border-start ps-2 text-dark-emphasis">House</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <ul class="pagination">
+            <li class="page-item previous">
+                <a class="page-link active" href="">Previous</a>
+            </li>
 
 
-        <li class="page-item next">
-            <a class="page-link active" href="">Next</a>
-        </li>
-    </ul>
-
+            <li class="page-item next">
+                <a class="page-link active" href="">Next</a>
+            </li>
+        </ul>
+    </div>
 
     <script>
         $(document).ready(function () {
@@ -112,7 +367,7 @@
                     nextBtn.toggleClass('d-none', page === last)
                 }
                 function appendPageLink(pageNumber) {
-                    $(`<li class="page-item"><a class="page-link ${pageNumber == page?"active": ""}" href="search.html?page=${pageNumber}">${pageNumber}</a></li>`)
+                    $(`<li class="page-item"><a class="page-link ${pageNumber == page ? "active" : ""}" href="search.html?page=${pageNumber}">${pageNumber}</a></li>`)
                         .insertBefore('.pagination .page-item:last');
                 }
                 function appendEllipsis() {
@@ -138,6 +393,26 @@
             })
         });
     </script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 
 </html>
+<!-- /
+        On load => call the search API to get the list properties
+        => research how to pagination on JSON-SERVER
+        => call first page with 10 items =>
+        => generate 10 item to 10 mock HTML
+
+        Get the page number from URL
+        => paste that number to the data Url
+        => http://localhost:3000/search?_page={}
+        //eq(0): target the first .page-item element
+
+        More than 5 pages
+        1~3: pre 1,2,3,4...next (<= firstPage + 2)        
+        lastpage-2: pre 1...7,8,9 (9 is the last page) (>= lastPage - 2)
+        4~: pre 1...3,4,5...next (else)
+    -->
