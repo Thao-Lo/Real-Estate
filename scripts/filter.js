@@ -382,21 +382,27 @@ $(window).ready(function () {
         {
             type: 'established-property',
             name: 'established property',
+            value: ['all', 'new', 'established'],
             space: ['All types', 'New', 'Established']
         },
         {
-            type: 'sale-method',
+            type: 'sale-method', 
             name: 'sale method',
+            value: ['all', 'privateTreatySale', 'auction'],
             space: ['All types', 'Private treaty sale', 'Auction']
         }
     ]
 
-    let buyContainer = $("#pills-filter-buy");
-    let rentContainer = $("#pills-filter-rent");
-    let soldContainer = $("#pills-filter-sold");
+    let buyContainer = $("#pills-filter-buy").find('#buy-form');
+    let rentContainer = $("#pills-filter-rent").find('#rent-form');
+    let soldContainer = $("#pills-filter-sold").find('#sold-form');
     let buy = 'buy';
     let rent = 'rent';
     let sold = 'sold';
+    let resetBtn = $('.reset-btn');
+    let filterSearchBtn = $('.filter-search-btn');
+
+
 
     //generate type container
     function generateTypeContainer(tabContainer, data, tabName) {
@@ -423,24 +429,32 @@ $(window).ready(function () {
                 let isAllTypes = type === "all types";
                 let htmlTemplate = `
               <div class="form-check py-2 lh-base  col-6">
-                    <input class="form-check-input cursor-pointer" type="checkbox" value="${value}" id="${value}" 
-                    ${isAllTypes ? 'data-all-type="true"' : ''}>
-                    <label class="form-check-label cursor-pointer text-capitalize" for="${value}"> ${type}
+                    <input class="form-check-input cursor-pointer" type="checkbox" value="${value}" id="${tabName}-${value}" 
+                    ${isAllTypes ? 'data-all-type="true"' : ''}  ${isAllTypes ? 'checked' : ''}>
+                    <label class="form-check-label cursor-pointer text-capitalize" for="${tabName}-${value}"> ${type}
                     </label>
                 </div>
             `
                 tabContainer.find('.property-type-container').append(htmlTemplate);
             })
+        
         let inputCheckbox = $('.property-type-container').find('input[type="checkbox"]');
-        inputCheckbox.on('change', (event) => {
+
+        inputCheckbox.on('change', function(event) {
+            //is the all-type checkbox event.currentTarget => return true is all-type is checked
             let isAllTypesCheck = $(event.currentTarget).data('all-type');
 
+            // if all-type is checked
             if (isAllTypesCheck) {
+                //this = all-type checkbox is :checked (css pseudo)
                 if ($(this).is(':checked')) {
+                    //inputCheckbox filter other checkboxes which is not "all-type", turn all checked to false or unchecked
                     inputCheckbox.not(this).prop('checked', false);
                 }
             } else {
+                // if other checkbox is checked, and event.currentTarget is not all-type
                 if ($(this).is(':checked')) {
+                    //find the all-type checkbox, which is checked and turn the prop to false or unchecked all-type
                     $('.property-type-container').find('input[type="checkbox"][data-all-type="true"]').prop('checked', false)
                 }
             }
@@ -642,11 +656,11 @@ $(window).ready(function () {
     }
     function generateRadioCheckBox(tabContainer, feature, data) {
         data.filter(({ type }) => type === feature)
-            .forEach(({ type, space }) => {
+            .forEach(({ type, space, value}) => {
                 let htmlTemplate = space.map((space, index) => ` 
                 <div class="col-3 form-check form-check-inline pe-4 me-2">
                     <input class="form-check-input cursor-pointer" type="radio"
-                        name="inlineRadioOptions" id="${type}Radio${index}" value="option${index}">
+                        name="inlineRadioOptions" id="${type}Radio${index}" value="${value[index]}" ${value[index] == "all" ? "checked": ""}>
                     <label class="form-check-label cursor-pointer" for="${type}Radio${index}">${space}</label>
                 </div>`).join('');
                 tabContainer.find(`.${feature}-type-container`).append(htmlTemplate);
@@ -849,10 +863,31 @@ $(window).ready(function () {
     }
 
    
-
-
     //call function for each container
     generateBuyComponent() ;
     generateRentComponent();
     generateSoldComponent()
+
+    function findActiveFormTab(){
+        const activeTab = $('.tab-pane.active');
+        return activeTab.find('form');       
+    }
+   
+    //Todo
+    resetBtn.on('click', function(){
+       const activeForm = findActiveFormTab();
+        if(activeForm.length > 0){
+            activeForm[0].reset();
+        }
+        console.log("reset click: ", activeForm[0]);
+       
+    })
+    filterSearchBtn.on('click', function(e){
+        const activeForm = findActiveFormTab();       
+        if(activeForm.length > 0){
+            activeForm[0].submit();         
+        }
+        console.log("submit");
+    })
+
 })
