@@ -1,10 +1,12 @@
 @use'../global/function';
 @use '../global/variable' as *;
 @use '../global/breakpoint' as *;
-.search-list-container{
+
+.search-list-container {
     max-width: 1110px;
     min-width: 25.27rem;
 }
+
 .product-entry-point {
 
     .product-card-section {
@@ -56,7 +58,7 @@
 
         .estate-list {
             .single-estate-card {
-                width: 100%;                
+                width: 100%;
                 max-height: 37.5rem;
                 min-height: 31.75rem;
                 border: 1px solid white;
@@ -106,12 +108,13 @@
                 .estate-card-body {
                     position: relative;
                     height: 65%;
-                   
+
 
                     img {
                         width: 100%;
                         max-height: 25rem;
                     }
+
                     .under-offer {
                         position: absolute;
                         background-color: white;
@@ -132,8 +135,94 @@
 }
 
 
-.card-sm{
+.card-sm {
+    width: 18.75rem;
     border: none;
     border-radius: 0.75rem;
-    box-shadow:rgba(0, 0, 0, 0.16) 0px 0.0625rem 0.25rem 0px ;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0.0625rem 0.25rem 0px;
+}
+
+.sidebar-popup {
+    width: 18.75rem;
+
+    .sidebar-card {
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 0.0625rem 0.25rem 0px;
+        border-radius: 0.5rem;
+
+        .sidebar-card-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem;
+            width: 100%;
+            height: 2.5rem;
+            background-color: rgb(190 226 224);
+            border-radius: 0.5rem 0.5rem 0 0;
+
+            img {
+                width: 8.5rem;
+            }
+        }
+
+        .sidebar-card-header {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            width: 100%;
+            .item-1 {
+                flex: 2;
+                position: relative;
+                img{
+                    width: 100%
+                }
+                p{
+                    position: absolute;
+                    left: 1rem;
+                    bottom: 0.5rem;
+                }
+            }
+
+            div {
+                display: flex;
+                flex: 1;
+                gap: 2px;
+                .item-2 {
+                    flex: 1;
+                    width: 50%
+                }
+
+                .item-3 {
+                    flex: 1;
+                    width: 50%
+                }
+            }
+        }
+
+        .sidebar-card-body {
+            width: 100%; 
+            padding: 1rem;          
+        }
+
+        .sidebar-card-footer {
+            width: 100%;
+            height: 2.5rem;            
+            background-color: rgb(190 226 224);
+            position: relative;
+            border-radius: 0 0 0.5rem 0.5rem;
+            .sidebar-agent-name{
+                padding-left: 150px;
+            }
+            .sidebar-agent-avatar {
+                position: absolute;
+                width: 4rem;
+                height: 4rem;                
+                border-radius: 50%;
+                border: 1px solid rgb(128, 128, 128, 0.5);
+                object-fit: cover;
+                right: 0.5rem;
+                bottom: 0.5rem;
+            }
+        }
+    }
 }
