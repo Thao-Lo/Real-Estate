@@ -22,10 +22,10 @@
 </head>
 
 <body>
-    <div class="container" style="max-width: 1110px;">
-        <header>
+    <div class="search-list-container container-sm container-fluid">
+        <header class="row">
             <nav class="navbar">
-                <div class="container-fluid d-flex align-items-baseline">
+                <div class="w-100 d-flex align-items-baseline">
                     <button class="btn btn-outline d-none d-md-inline" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <a class="navbar-brand mx-auto" href="#">
+                    <a class="navbar-brand mx-sm-auto mx-0" href="#">
                         <img src="/assets/icons/logo.svg" alt="">
                     </a>
 
@@ -135,8 +135,9 @@
             </div>
         </header>
 
+        <!-- SEARCH SECTION -->
         <section class="row border border-start-0 border-end-0 py-3 mb-3">
-            <div class="col-12 d-flex gap-2">
+            <div class="col-12 d-flex gap-1 gap-md-2 px-0">
                 <button type="button"
                     class="btn btn-outline-secondary border-0 px-2 text-capitalize d-flex align-items-center align-self-start flex-grow-1">
                     <svg class="CK__Icon--medium flex-1 align-self-start" viewBox="0 0 16 16" fill="none" width="2rem"
@@ -146,10 +147,11 @@
                             fill="currentColor"></path>
                     </svg>
                     <span class="d-none d-md-inline">Search region, suburb or postcode</span>
-                    <span class="d-md-none d-sm-inline">Search region, suburb...</span>
+                    <span class="d-md-none d-none d-sm-inline text-small">Search region, suburb...</span>
+                    <span class="d-sm-none d-inline">Search region...</span>
                 </button>
                 <button type="button"
-                    class="btn btn-outline-secondary rounded-pill px-18 fw-bold d-none d-sm-inline text-nowrap">Property
+                    class="btn btn-outline-secondary rounded-pill px-18 px-3 fw-bold d-none d-sm-inline text-nowrap">Property
                     type</button>
                 <button type="button"
                     class="btn btn-outline-secondary rounded-pill px-18 fw-bold d-none d-lg-inline">Price</button>
@@ -171,23 +173,35 @@
         </section>
 
         <section class="row">
-            <div class="col-md-12 col-lg-9">
+            <!-- SEARCH RESULTS -->
+            <!-- SEARCH TITLE -->
+            <div class="w-40rem col-md-12 col-lg-8">
                 <div class="row">
                     <div class="col-12 d-flex ">
                         <div class="me-auto pt-2 pb-3 fw-semibold fs-1125">Real Estate & Property for Sale in Australia
                         </div>
-                        <div class="d-flex">
+                        <div class="d-sm-flex d-none">
                             <button type="button" class="btn btn-outline-secondary rounded px-18 align-self-end">
                                 <i class="fa-regular fa-star"></i>
-                               <span class="fw-medium"> Save Search</span>
+                                <span class="fw-medium"> Save Search</span>
                             </button>
                         </div>
 
                     </div>
-                    <div class="col-12 border-bottom pb-3">
+                    <div class="col-12 d-flex justify-content-between border-bottom pb-3 align-items-baseline">
                         <span class="fs-0875">1-25 of 189723 properties</span>
+                        <div class="d-flex d-sm-none">
+                            <button type="button" class="btn btn-outline-secondary rounded px-18 align-self-end">
+                                <i class="fa-regular fa-star"></i>
+                                <span class="fw-medium"> Save Search</span>
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-12 d-flex justify-content-between align-items-center border-bottom py-2 mb-3">
+                </div>
+
+                <!-- SEARCH LIST -->
+                <div class="layout-content">
+                    <div class="d-flex justify-content-between align-items-center border-bottom py-2 mb-3">
                         <a class="d-flex text-decoration-none text-danger gap-1 fw-semibold" href="#">
                             <svg class="svg-icon-small" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -197,7 +211,7 @@
                             </svg>
                             <span class="fs-0875">List</span>
                         </a>
-                        <a class="d-flex text-decoration-none text-dark gap-1 fw-semibold" href="#">
+                        <a class="d-none d-lg-flex text-decoration-none text-dark gap-1 fw-semibold" href="#">
                             <svg class="svg-icon-small" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -224,9 +238,9 @@
                             </svg>
                             <span class="fs-0875">Auctions</span>
                         </a>
-                        <form class="d-flex align-items-center gap-2 fw-semibold">
+                        <form class="d-none d-sm-flex align-items-center gap-2 fw-semibold">
                             <span class="fs-0875">Sort</span>
-                            <select class="form-select" id="validationCustom04" required>
+                            <select class="form-select d-none d-sm-inline" id="validationCustom04" required>
                                 <option selected disabled value="">Featured</option>
                                 <option>Date (Newest - Oldest)</option>
                                 <option>Date (Oldest - Newest)</option>
@@ -236,17 +250,34 @@
                                 <option>Next Auction</option>
                             </select>
                         </form>
+                        <form class="d-flex d-sm-none align-items-center gap-2 fw-semibold">
+                            <span class="fs-0875 dropdown dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">Sort</span>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">Featured</li>
+                                <li class="dropdown-item">Date (Newest - Oldest)</li>
+                                <li class="dropdown-item">Date (Oldest - Newest)</li>
+                                <li class="dropdown-item">Price (Lowest - Highest)</li>
+                                <li class="dropdown-item">Date (Highest - Lowest)</li>
+                                <li class="dropdown-item">Next Inspection</li>
+                                <li class="dropdown-item">Next Auction</li>
+                            </ul>
+                        </form>
+
+
                     </div>
 
-                    <div class="divided-content col-12">
+                    <div class="divided-content">
                         <ul class="estate-list list-style-none">
                             <li class="single-estate-card mb-4 shadow-sm">
-                                <div class="estate-card-header d-flex justify-content-between align-items-center" style="background-color:#1e3860">
+                                <div class="estate-card-header d-flex justify-content-between align-items-center"
+                                    style="background-color:#1e3860">
                                     <div class="agent-logo p-2">
                                         <img src="./assets/logo/stratton.JPG" alt="">
                                     </div>
                                     <div class="agent-profile d-flex gap-2 align-items-center">
-                                        <span class="agent-name text-white fs-0875 fw-semibold me-3">Vicktor Sutrisno</span>
+                                        <span class="agent-name text-white fs-0875 fw-semibold me-3">Vicktor
+                                            Sutrisno</span>
                                         <span class="agent-avatar">
                                             <img src="./assets/avatar/viktor.JPG" alt="">
                                         </span>
@@ -254,7 +285,8 @@
                                 </div>
                                 <div class="estate-card-body">
                                     <img src="./assets/image/estate.JPG" alt="">
-                                    <div class="under-offer fs-075 fw-semibold px-2 py-1 rounded">&#9679; Under offer</div>
+                                    <div class="under-offer fs-075 fw-semibold px-2 py-1 rounded">&#9679; Under offer
+                                    </div>
                                 </div>
                                 <div class="estate-card-footer">
                                     <div class="d-flex justify-content-between">
@@ -286,9 +318,27 @@
                                 </div>
                             </li>
                         </ul>
+
                     </div>
                 </div>
             </div>
+            <div class="d-none d-lg-inline col-lg-4">
+                <div class="fs-075 text-secondary-emphasis fw-semibold">PROPERTY SHOWCASE</div>
+                <div class="">
+                    card
+                </div>
+                <div class="row d-flex align-items-center card-sm p-2 mt-4">
+                    <div class="col-10">
+                        <div class="fw-bold fs-0875">What's your property worth?</div>
+                        <div class="fs-0875 text-secondary">Get a giude to the market.</div>
+                    </div>
+                    <div class="col-2 d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
 
         <ul class="pagination">

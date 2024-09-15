@@ -1,0 +1,20 @@
+$breakpoints: (
+    mobile: 576px,
+    tablet: 668px,
+    laptop: 992px,
+);
+
+@mixin media-query($key, $type: 'min-width'){
+    $size: map-get($breakpoints, $key);
+    @if $type == 'min-width'{
+        @media only screen and (min-width: $size){
+            @content;
+        }
+    }
+    @else if $type == 'max-width'{
+        @media only screen and (max-width: $size){
+            @content;
+        }
+    }
+   
+}
