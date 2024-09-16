@@ -22,14 +22,14 @@
 
 <body class="page-bg">
     <div class="full-screen container d-flex justify-content-center align-items-center">
-        <div class="d-flex flex-column">
-            <div class="sign-in-header">
-                <a class="" href="#">
+        <div class="sign-in-card d-flex flex-column gap-3 shadow-sm">
+            <div class="sign-in-header d-flex flex-column gap-3 align-items-center">
+                <a class="d-flex justify-content-center" href="#">
                     <img src="/assets/logo/rea-logo.png" alt="real estate logo">
                 </a>
-                <div class="">Create account</div>
-                <p class="">You can use thi account across these sites</p>
-                <div class="">
+                <div class="fs-3 fw-semibold text-dark-primary">Create account</div>
+                <p class="mb-0">You can use thi account across these sites:</p>
+                <div class="co-brand d-flex px-5 justify-content-center">
                     <a href="https://www.realcommercial.com.au/" class="">
                         <img src="/assets/logo/rca-logo-new.png" alt="real commercial logo">
                     </a>
@@ -40,54 +40,56 @@
             </div>
             <div class="sign-in-body">
                 <form action="">
-                    <div class="d-flex gap-2 border">
+                    <div class="email-input px-2 mb-4 d-flex align-items-center gap-2 border">
                         <i class="fa-regular fa-envelope"></i>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <div class="form-floating flex-1">
+                            <input type="email" class="form-control border-0 p-0 w-100" id="floatingInput" placeholder="name@example.com">
                             <label for="floatingInput">Email address</label>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    <div class="col-12 mb-4">
+                        <button class="btn btn-primary w-100 fw-semibold py-12" type="submit">Continue</button>
                     </div>
                 </form>
-
-                <div class="row">
-                    <div class="col-5">
+                <div class="d-flex justify-content-center">
+                  <p class="">  Already have an account? <span class=" link-color fw-semibold custom-link">Sign in</span></p>
+                </div>
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-5 pe-0">
                         <hr />
                     </div>
                     <div class="col-2 text-center fw-bold">OR</div>
-                    <div class="col-5">
+                    <div class="col-5 ps-0">
                         <hr />
                     </div>
                 </div>
-                <div class="">
+                <div class="d-flex flex-column gap-3">
                     <form action="" method="">
                         <input type="hidden" value="google-oauth">
-                        <button type="submit">
-                            <span>icon</span>
-                            <span>Countinue with Google</span>
+                        <button type="submit" class="btn btn-outline-secondary border-secondary w-100 p-12 d-flex gap-2">
+                            <img src="/assets/logo/google.jfif" alt="google icon" class="icon-small ">
+                            <span class="flex-grow-1 text-center">Continue with Google</span>
                         </button>
                     </form>
                     <form action="" method="">
                         <input type="hidden" value="facebook">
-                        <button type="submit">
-                            <span>icon</span>
-                            <span>Countinue with Facebook</span>
+                        <button type="submit" class="btn btn-outline-secondary border-secondary w-100 p-12 d-flex gap-2">
+                            <img src="/assets/logo/facebook.png" alt="facebook icon" class="icon-small">
+                            <span class="flex-grow-1 text-center">Continue with Facebook</span>
                         </button>
                     </form>
                     <form action="" method="">
                         <input type="hidden" value="apple">
-                        <button type="submit">
-                            <span>icon</span>
-                            <span>Countinue with Apple</span>
+                        <button type="submit" class="btn btn-outline-secondary border-secondary w-100 p-12 d-flex gap-2">
+                            <img src="/assets/logo/apple.png" alt="apple icon" class="icon-small">
+                            <span class="flex-grow-1 text-center">Continue with Apple</span>
                         </button>
                     </form>
                 </div>
             </div>
-            <hr />
-            <div class="">
-                <button type="button" class="btn btn-link text-decoration-none fs-075 text-black" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <hr class="mb-0"/>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-link text-decoration-none fs-075 text-black p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Personal Information Collection Statement
                 </button>
                 <!-- Modal -->
