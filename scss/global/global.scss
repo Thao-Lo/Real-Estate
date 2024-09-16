@@ -68,6 +68,9 @@
 .list-style-none{
     list-style-type: none;
 }
+.text-decoration-none{
+    text-decoration: none;
+}
 .custom-link {
     text-decoration: none;
     cursor: pointer;
@@ -87,15 +90,24 @@ nav {
             width: 200px;
         }
     }
-
     .nav-item {
         a {
             font-weight: 500;
         }
-
-
     }
 }
 .w-40rem{
     width: 40rem;
+}
+.avatar-medium{
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+}
+.page-bg{
+    background-color: #f6f5f7;
+}
+.full-screen{
+    width: 100vw;
+    height: 100vh;
 }

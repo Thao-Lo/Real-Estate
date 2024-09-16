@@ -68,6 +68,10 @@
   list-style-type: none;
 }
 
+.text-decoration-none {
+  text-decoration: none;
+}
+
 .custom-link {
   text-decoration: none;
   cursor: pointer;
@@ -92,6 +96,21 @@ nav .nav-item a {
 
 .w-40rem {
   width: 40rem;
+}
+
+.avatar-medium {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+}
+
+.page-bg {
+  background-color: #f6f5f7;
+}
+
+.full-screen {
+  width: 100vw;
+  height: 100vh;
 }
 
 .filter-body .nav-pills .nav-item .nav-link {
@@ -275,6 +294,10 @@ nav .nav-item a {
   font-size: 0.875rem;
 }
 
+.link-color {
+  color: #00639e;
+}
+
 .search-list-container {
   max-width: 1110px;
   min-width: 25.27rem;
@@ -320,7 +343,7 @@ nav .nav-item a {
   overflow: hidden;
 }
 .layout-content .divided-content .estate-list .single-estate-card .estate-card-header {
-  height: 8%;
+  height: 3.375rem;
   width: 100%;
 }
 .layout-content .divided-content .estate-list .single-estate-card .estate-card-header .agent-logo {
@@ -370,6 +393,7 @@ nav .nav-item a {
 .layout-content .divided-content .estate-list .single-estate-card .estate-card-footer {
   height: 25%;
   padding: 1rem 1.5rem;
+  background-color: white;
 }
 
 .card-sm {
