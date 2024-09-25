@@ -258,19 +258,40 @@
     }
     .sign-in-body{
         .email-input{
+            border: 1px solid gray;
             border-radius: 0.5rem;
             height: 3rem;
+            position: relative;
+            transition: border 0.1s;
             i{
                 width: 1.25rem;
                 height: 1.25rem;
             }
-            .form-floating{
+            input{
                 height: 100%;
             }
-            .form-control:focus{
+            input:focus{
                 outline: none;
                 box-shadow: none;
                
+            }
+            label{
+                position: absolute;               
+                left: 2rem;
+                top: 0.65rem;
+                transition: 0.3s;
+                pointer-events: none; /* This allows clicks to go through the label */
+            }
+            input:focus + label{
+                background-color: white;
+                font-size: 0.75rem;
+                top: -0.7rem;
+                padding: 0 5px;
+               
+            }
+             // Change the wrapper's border when any child input is focused
+            &:focus-within {
+                border: 2px solid black; 
             }
         }
     }

@@ -534,19 +534,38 @@ nav .nav-item a {
   opacity: 1;
 }
 .sign-in-card .sign-in-body .email-input {
+  border: 1px solid gray;
   border-radius: 0.5rem;
   height: 3rem;
+  position: relative;
+  transition: border 0.1s;
 }
 .sign-in-card .sign-in-body .email-input i {
   width: 1.25rem;
   height: 1.25rem;
 }
-.sign-in-card .sign-in-body .email-input .form-floating {
+.sign-in-card .sign-in-body .email-input input {
   height: 100%;
 }
-.sign-in-card .sign-in-body .email-input .form-control:focus {
+.sign-in-card .sign-in-body .email-input input:focus {
   outline: none;
   box-shadow: none;
+}
+.sign-in-card .sign-in-body .email-input label {
+  position: absolute;
+  left: 2rem;
+  top: 0.65rem;
+  transition: 0.3s;
+  pointer-events: none; /* This allows clicks to go through the label */
+}
+.sign-in-card .sign-in-body .email-input input:focus + label {
+  background-color: white;
+  font-size: 0.75rem;
+  top: -0.7rem;
+  padding: 0 5px;
+}
+.sign-in-card .sign-in-body .email-input:focus-within {
+  border: 2px solid black;
 }
 
 .filter-body .nav-pills {
